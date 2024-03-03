@@ -6,9 +6,8 @@ import os
 
 PAGES_COUNT = 100
 
-save_dir_ru = 'result/ru'
-save_dir_en = 'result/en'
-index_file = 'result/index.txt'
+save_dir_ru = 'crawling/result/ru'
+index_file = 'crawling/result/index.txt'
 
 restricted_domains = ['t.me', 'instagram.com', 'vk.com', 'm.vk.com', 'ok.ru', 'youtube.com', 'www.youtube.com',
                       'www.tiktok.com', 'viber.com', 'music.apple.com', 'rutube.ru', 'www.linkedin.com',
@@ -79,8 +78,6 @@ class PagesSpider(scrapy.Spider):
 def create_directories():
     if not os.path.exists(save_dir_ru):
         os.makedirs(save_dir_ru)
-    if not os.path.exists(save_dir_en):
-        os.makedirs(save_dir_en)
 
 
 if __name__ == "__main__":
