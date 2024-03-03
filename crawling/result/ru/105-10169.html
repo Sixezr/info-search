@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+	<meta charset="utf-8" />
+<meta name="Author" content="Apple Inc." />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" href="/favicon.ico" />
+<link rel="mask-icon" href="/apple-logo.svg" color="#333333">
+
+<link rel="stylesheet" href="/assets/styles/global.dist.css?49232441032" type="text/css" />
+<link rel="stylesheet" href="/assets/styles/dark-mode.css?32222422039" type="text/css" media="(prefers-color-scheme: dark)" data-color-scheme="dark" />
+<link rel="stylesheet" href="/assets/styles/localization.css?23182355271" type="text/css" />
+
+<script src="/assets/scripts/lib/jquery/jquery-3.6.0.min.js?23182355271"></script>
+<script src="/assets/scripts/settings.js?23182355271"></script>
+<script src="/assets/scripts/language-locales.js?23182355271"></script>
+<script src="/assets/scripts/DeveloperBreadcrumbs.js?23182355271"></script>
+
+<script async src="/assets/scripts/lib/jquery/jquery.retinate.js?23182355271"></script>
+<script async src="/assets/scripts/global.js?23182355271"></script>
+<script async src="/assets/scripts/global-logout.js?23182355271"></script>
+
+
+
+	<link rel="stylesheet" href="https://www.apple.com/wss/fonts?family=SF+Pro&v=2" type="text/css" />
+<link rel="stylesheet" href="https://www.apple.com/wss/fonts?family=SF+Pro+Icons&v=1" type="text/css" />
+<link rel="stylesheet" href="https://www.apple.com/wss/fonts?family=SF+Mono&v=2" type="text/css" />
+<link rel="stylesheet" href="https://www.apple.com/wss/fonts?family=Apple+Icons&amp;v=1" type="text/css" />
+
+
+		<meta name="omni_page" content="Swift packages: Resources and localization - WWDC20 - Videos" />
+	<title>Swift packages: Resources and localization - WWDC20 - Videos - Apple Developer</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link type="text/css" rel="stylesheet" href="/videos/styles/videos.css?2">
+	<link type="text/css" rel="stylesheet" href="/videos/styles/video-overlay.css?2">
+	<meta name="description" content="Bring your resources along for the ride when you organize and share code using Swift packages. Discover how to include assets like images...">
+
+	<meta property="og:url" content="https://developer.apple.com/videos/play/wwdc2020/10169/" />
+	<meta property="og:title" content="Swift packages: Resources and localization - WWDC20 - Videos - Apple Developer" />
+	<meta property="og:description" content="Bring your resources along for the ride when you organize and share code using Swift packages. Discover how to include assets like images..." />
+	<meta property="og:site_name" content="Apple Developer" />
+	<meta property="og:type" content="website" />
+	<meta property="og:video" content="https://devstreaming-cdn.apple.com/videos/wwdc/2020/10169/3/0F6E83BB-5FF5-4627-9C42-F111EF4B4098/master.m3u8" /> 
+	<meta property="og:video_secure_url" content="https://devstreaming-cdn.apple.com/videos/wwdc/2020/10169/3/0F6E83BB-5FF5-4627-9C42-F111EF4B4098/master.m3u8" /> 
+	<meta property="og:video:type" content="vnd.apple.mpegURL" /> 
+	<meta property="og:video:width" content="1280" />
+	<meta property="og:video:height" content="720" />
+		<meta property="og:image" content="https://devimages-cdn.apple.com/wwdc-services/images/49/3484/3484_wide_250x141_2x.jpg" />
+		<meta property="og:locale" content="en_US" />
+	<meta itemprop="datePublished" content="2020-06-23">
+	<meta itemprop="uploadDate" content="2020-06-23">	
+
+</head>
+<body class="view-play theme-dark">
+
+	<script>
+	const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+	if (window.Settings.preferredColorScheme) {
+		const colorTheme = (window.Settings.preferredColorScheme === 'auto') && !prefersDark ? 'light' : (window.Settings.preferredColorScheme === 'light') ? 'light' : 'dark'
+		document.body.setAttribute('data-color-scheme', colorTheme);
+	} else {
+		document.body.setAttribute('data-color-scheme', prefersDark ? 'dark' : 'light');
+	}
+</script>
+<style>
+	/* footer */
+	html body[data-color-scheme='dark'] #main section.section.section-resources.bg-alt {background-color:var(--fill-tertiary);color:var(--glyph-gray);}
+	html body[data-color-scheme='dark'] .developer-router-links {background-color:var(--fill-tertiary);color:var(--glyph-gray);}
+	html body[data-color-scheme='dark'] .footer {background-color:var(--fill-tertiary);color:var(--glyph-gray-tertiary);}
+	/* body backgrounds */
+	body[data-color-scheme='dark'].dmf {background-color: #000;}
+	html body[data-color-scheme='dark'].dmf .bg-alt {background-color:var(--fill-tertiary);}
+	html body[data-color-scheme='dark'].dmf .bg-blue {background-color:var(--fill-blue-secondary);}
+	html body[data-color-scheme='dark'].dmf .bg-green-blue {background:linear-gradient(135deg, #65976d 0%, #588ea4 100%)}
+	html body[data-color-scheme='dark'].dmf .bg-yellow {background: linear-gradient(to bottom, var(--fill-tertiary) 0%, var(--fill-tertiary-alt) 100%);}
+	html body[data-color-scheme='dark'].dmf .bg-light {background-color:var(--fill-secondary-alt);}
+	html body[data-color-scheme='dark'].dmf .bg-gradient, html body[data-color-scheme='dark'].dmf .bg-grad {background:linear-gradient(to bottom, var(--dark) 0%, var(--fill-gray-secondary-alt) 100%);}
+	html body[data-color-scheme='dark'].dmf .bg-grad-down {background:linear-gradient(to bottom, var(--dark) 0%, var(--fill-gray-secondary-alt) 100%);}
+	html body[data-color-scheme='dark'].dmf .bg-grad-up {background:linear-gradient(to bottom, var(--fill-gray-secondary-alt) 0%, var(--dark) 100%);}
+	html body[data-color-scheme='dark'].dmf .bg-blue-gradient, html body[data-color-scheme='dark'].dmf .bg-gradient-blue {background:linear-gradient(to bottom, var(--fill-blue-gradient-light) 0%, var(--fill-blue-gradient-dark) 100%);}
+	html body[data-color-scheme='dark'].dmf .bg-blue-gradient-alt {background: linear-gradient(90deg, #061830 0%, #102d48 100%);}
+	/* globalNav */
+	html body[data-color-scheme='dark'] #ac-globalnav {background: var(--fill-tertiary);}
+	/* localNav */
+	html body[data-color-scheme='dark'] .localnav.localnav-scrim .localnav-background,
+	html body[data-color-scheme='dark'] .localnav-scrim.localnav.localnav-background {
+		background-color: rgba(29, 29, 31, 0.9);
+	}
+	@supports ((-webkit-backdrop-filter: initial) or (backdrop-filter: initial)) {
+		html body[data-color-scheme='dark'] .localnav.localnav-scrim .localnav-background,
+		html body[data-color-scheme='dark'] .localnav-scrim.localnav.localnav-background {
+			background-color: rgba(29, 29, 31, 0.72);
+		}
+	}
+</style>
+<link rel="stylesheet" href="/assets/styles/globalnav.css?23182355271" type="text/css" />
+
+<link rel="stylesheet" href="/assets/styles/suggest-lang.css?23182355271" type="text/css" />
+<div id="suggest-lang" class="ribbon hide" lang="en">
+	<div class="ribbon-content-wrapper">
+		<div class="ribbon-content row">
+			<div class="column large-12 large-centered">
+				<p><a href="#" id="suggest-link" class="ribbon-link more">View in English</a></p>
+				<button id="suggest-closer" class="icon icon-after icon-reset" aria-label="Dismiss language suggestion" tabindex="0"></button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="/assets/scripts/suggest-lang.js?23182355271"></script>
+<aside id="ac-gn-segmentbar" class="ac-gn-segmentbar" lang="en-US" dir="ltr">
+</aside>
+<input type="checkbox" id="ac-gn-menustate" class="ac-gn-menustate" />
+<nav id="ac-globalnav" class="no-js" role="navigation" aria-label="Global" data-hires="false" data-analytics-region="global nav" lang="en-US" dir="ltr"
+    data-www-domain="www.apple.com"
+    data-store-locale="us"
+    data-store-root-path="/us"
+    data-store-api="/[storefront]/shop/bag/status"
+    data-search-locale="en_US"
+    data-search-suggestions-api="/search-services/suggestions/"
+    data-search-defaultlinks-api="/search-services/suggestions/defaultlinks/"
+    data-search-suggestions-enabled="false">
+	<div class="ac-gn-content">
+		<ul class="ac-gn-header">
+			<li class="ac-gn-item ac-gn-menuicon">
+				<label class="ac-gn-menuicon-label" for="ac-gn-menustate" aria-hidden="true">
+					<span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-top">
+						<span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-top"></span>
+					</span>
+					<span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-bottom">
+						<span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-bottom"></span>
+					</span>
+				</label>
+				<a href="#ac-gn-menustate" role="button" class="ac-gn-menuanchor ac-gn-menuanchor-open" id="ac-gn-menuanchor-open">
+					<span class="ac-gn-menuanchor-label">Global Nav Open Menu</span>
+				</a>
+				<a href="#" role="button" class="ac-gn-menuanchor ac-gn-menuanchor-close" id="ac-gn-menuanchor-close">
+					<span class="ac-gn-menuanchor-label">Global Nav Close Menu</span>
+				</a>
+			</li>
+			<li class="ac-gn-item ac-gn-apple">
+				<a class="ac-gn-link ac-gn-link-apple-developer" href="/" data-analytics-title="appledeveloper home" id="ac-gn-firstfocus-small">
+					<span class="ac-gn-link-text">Apple Developer</span>
+				</a>
+			</li>
+		</ul>
+		<div class="ac-gn-search-placeholder-container" role="search">
+			<div class="ac-gn-search ac-gn-search-small">
+				<a id="ac-gn-link-search-small" class="ac-gn-link" href="/search/" data-analytics-title="search" data-analytics-click="search" data-analytics-intrapage-link aria-label="Search">
+					<div class="ac-gn-search-placeholder-bar">
+						<div class="ac-gn-search-placeholder-input">
+							<div class="ac-gn-search-placeholder-input-text" aria-hidden="true">
+								<div class="ac-gn-link-search ac-gn-search-placeholder-input-icon"></div>
+								<span class="ac-gn-search-placeholder">Search</span>
+							</div>
+						</div>
+						<div class="ac-gn-searchview-close ac-gn-searchview-close-small ac-gn-search-placeholder-searchview-close">
+							<span class="ac-gn-searchview-close-cancel" aria-hidden="true">Cancel</span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<ul class="ac-gn-list">
+			<li class="ac-gn-item ac-gn-apple">
+				<a class="ac-gn-link ac-gn-link-apple-developer" href="/" data-analytics-title="appledeveloper home" id="ac-gn-firstfocus">
+					<span class="ac-gn-link-text">Apple Developer</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-news">
+				<a class="ac-gn-link ac-gn-link-news" href="/news/" data-analytics-title="news">
+					<span class="ac-gn-link-text">News</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-discover">
+				<a class="ac-gn-link ac-gn-link-discover" href="/discover/" data-analytics-title="discover">
+					<span class="ac-gn-link-text">Discover</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-design">
+				<a class="ac-gn-link ac-gn-link-design" href="/design/" data-analytics-title="design">
+					<span class="ac-gn-link-text">Design</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-develop">
+				<a class="ac-gn-link ac-gn-link-develop" href="/develop/" data-analytics-title="develop">
+					<span class="ac-gn-link-text">Develop</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-distribute">
+				<a class="ac-gn-link ac-gn-link-distribute" href="/distribute/" data-analytics-title="distribute">
+					<span class="ac-gn-link-text">Distribute</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-dsupport">
+				<a class="ac-gn-link ac-gn-link-dsupport" href="/support/" data-analytics-title="dsupport">
+					<span class="ac-gn-link-text">Support</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-account">
+				<a class="ac-gn-link ac-gn-link-account" href="/account/" data-analytics-title="account">
+					<span class="ac-gn-link-text">Account</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-search" role="search">
+				<a id="ac-gn-link-search" class="ac-gn-link ac-gn-link-search" href="/search/" data-analytics-title="search" data-analytics-click="search" data-analytics-intrapage-link aria-label="Search"></a>
+			</li>
+		</ul>
+		<aside id="ac-gn-searchview" class="ac-gn-searchview" role="search" data-analytics-region="search">
+			<div class="ac-gn-searchview-content">
+				<div class="ac-gn-searchview-bar">
+					<div class="ac-gn-searchview-bar-wrapper">
+						<form id="ac-gn-searchform" class="ac-gn-searchform" action="/search/" method="get">
+							<div class="ac-gn-searchform-wrapper">
+								<input id="ac-gn-searchform-input" class="ac-gn-searchform-input" type="text" name="q" aria-label="Search" placeholder="Search" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="true" aria-owns="quicklinks suggestions" />
+								<button id="ac-gn-searchform-submit" class="ac-gn-searchform-submit" type="submit" disabled aria-label="Submit Search"></button>
+								<button id="ac-gn-searchform-reset" class="ac-gn-searchform-reset" type="reset" disabled aria-label="Clear Search">
+										<span class="ac-gn-searchform-reset-background"></span>
+									</button>
+							</div>
+						</form>
+						<button id="ac-gn-searchview-close-small" class="ac-gn-searchview-close ac-gn-searchview-close-small" aria-label="Cancel Search">
+								<span class="ac-gn-searchview-close-cancel" aria-hidden="true">
+									Cancel
+								</span>
+							</button>
+					</div>
+				</div>
+				<aside id="ac-gn-searchresults" class="ac-gn-searchresults hidden" data-string-quicklinks="Quick Links" data-string-suggestions="Suggested Searches" data-string-noresults="">
+                    <section class="ac-gn-searchresults-section ac-gn-searchresults-section-defaultlinks">
+                        <div class="ac-gn-searchresults-section-wrapper">
+							<div class="search-group-checkbox hidden"><input id="group-input" type="checkbox" name="group-filter" checked>Only search within “<span id="group-search-label"></span>”</div>
+                            <h3 class="ac-gn-searchresults-header ac-gn-searchresults-animated">Quick Links</h3>
+                            <ul class="ac-gn-searchresults-list" id="defaultlinks" role="listbox">
+                            </ul>
+                            <span role="status" class="ac-gn-searchresults-count" aria-live="polite">5 Quick Links</span>
+                        </div>
+                    </section>
+                </aside>
+			</div>
+			<button id="ac-gn-searchview-close" class="ac-gn-searchview-close" aria-label="Cancel Search">
+					<span class="ac-gn-searchview-close-wrapper">
+						<span class="ac-gn-searchview-close-left"></span>
+						<span class="ac-gn-searchview-close-right"></span>
+					</span>
+				</button>
+		</aside>
+			</div>
+</nav>
+<div class="ac-gn-blur"></div>
+<div id="ac-gn-curtain" class="ac-gn-curtain"></div>
+<div id="ac-gn-placeholder" class="ac-nav-placeholder"></div>
+<script src="/assets/scripts/ac-globalnav.built.js?23182355271"></script>
+<link rel="stylesheet" href="/assets/styles/search.css?23182355271">
+<script src="/assets/scripts/search.js?20002417054"></script>
+
+
+			<!-- metrics -->
+<script>
+    /* RSID: */
+    var s_account="awdappledeveloper"
+</script>	
+<script src="/assets/metrics/scripts/analytics.js?10202020"></script>
+<script>
+    s.pageName= AC && AC.Tracking && AC.Tracking.pageName();
+    s.channel="www.en.developer"
+    s.channel="www.videos.developer";
+
+    
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    var s_code=s.t();if(s_code)document.write(s_code)
+</script>
+<!-- /metrics -->
+	
+	<link rel="stylesheet" property="stylesheet" href="/assets/styles/localnav.css" type="text/css" />
+<input type="checkbox" id="localnav-menustate" class="localnav-menustate"/>
+<nav id="localnav" class="localnav localnav-scrim theme-dark" data-sticky role="navigation">
+	<div class="localnav-wrapper">
+		<div class="localnav-background"></div>
+		<div class="localnav-content">
+			<h2 class="localnav-title">
+				<a href="/videos/">Videos</a>
+			</h2>
+
+			<div class="localnav-menu">
+				<a href="#localnav-menustate" class="localnav-menucta-anchor localnav-menucta-anchor-open" id="localnav-menustate-open">
+					<span class="localnav-menucta-anchor-label">Open Menu</span>
+				</a>
+				<a href="#" class="localnav-menucta-anchor localnav-menucta-anchor-close" id="localnav-menustate-close">
+					<span class="localnav-menucta-anchor-label">Close Menu</span>
+				</a>
+				<div class="localnav-menu-tray">
+					<ul class="localnav-menu-items">
+						<li class="localnav-menu-item">
+							<a href="/videos/" class="localnav-menu-link">Collections</a>
+						</li>
+						<li class="localnav-menu-item">
+							<a href="/videos/topics/" class="localnav-menu-link">Topics</a>
+						</li>
+						<li class="localnav-menu-item">
+							<a href="/videos/all-videos/" class="localnav-menu-link">All Videos</a>
+						</li>
+						<li class="localnav-menu-item">
+							<a href="/videos/about/" class="localnav-menu-link">About</a>
+						</li>
+					</ul>
+				</div>
+				<div class="localnav-actions localnav-actions-center">
+					<div class="localnav-action localnav-action-menucta" aria-hidden="true">
+						<label for="localnav-menustate" class="localnav-menucta">
+							<span class="localnav-menucta-chevron"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+<label id="localnav-curtain" for="localnav-menustate"></label>
+<script src="/assets/scripts/ac-localnav.built.js"></script>
+<script type="text/javascript" src="/assets/scripts/localnav.js"></script>
+	<main id="main" class="main theme-dark" role="main">
+
+		<section class="bg-dark">
+
+			<section class="grid">
+
+				<section class="row">
+					<section class="column large-10 small-12  padding-top-small large-centered no-padding-bottom">
+						<!-- back link -->
+						<p class="back-link smaller">
+														<a class="icon icon-before icon-chevronleft" href="/videos/wwdc2020/">Back to WWDC 2020</a>
+													</p>
+					</section>
+				</section>
+
+				<!-- video player -->
+				<section class="video-wrapper row">
+					<section class="column large-10 small-12  padding-top-small padding-bottom-small large-centered">
+												<div class="developer-video-player">
+							<div id="video-status-overlay" class="developer-video-overlay" style="display: none">
+								<div class="video-status-content">
+									<div id="video-status-text"></div>
+									<img class="video-status-icon" id="icon-backward" src="/assets/elements/icons/symbols/gobackward5.svg" style="display: none" />
+									<img class="video-status-icon" id="icon-forward" src="/assets/elements/icons/symbols/goforward5.svg" style="display: none" />
+								</div>
+							</div>
+							<video id="video" class="video large-centered" controls="" src="https://devstreaming-cdn.apple.com/videos/wwdc/2020/10169/3/0F6E83BB-5FF5-4627-9C42-F111EF4B4098/master.m3u8" data-id="wwdc2020-10169"></video>
+						</div>
+						<div class="no-video-banner hidden">
+							<div class="no-video-copy">
+								<p>Streaming is available in most browsers,<br> and in the WWDC app.</p>
+							</div>
+							</span>
+						</div>
+
+											</section>
+				</section>
+
+			</section>
+
+		</section>
+
+		<section class="grid">
+
+			<!-- tab menu -->
+			<section class="tab-menu row divider-bottom">
+
+				<section class="column large-10 small-12  padding-top-small padding-bottom-small large-centered">
+
+					<ul class="tabs">
+						<li class="tab" data-supplement-id="details"><a href="#"><span class="smaller">Overview</span></a></li>
+						
+												<li class="tab" data-supplement-id="transcript"><a href="#"><span class="smaller">Transcript</span></a></li>
+						<li class="tab right active" data-supplement-id="search">
+							<!-- mobile search -->
+							<a href="#"><span><!--icon--></span></a>
+							<!-- desktop search -->
+							<section class="searchbar-wrapper desktop" style="opacity:0;">
+								<button class="search-icon"></button>
+								<input id="searchDesktop" class="active" type="text" autocomplete="off" placeholder="Search this video…">
+							</section>
+						</li>
+																		<li class="tab" data-supplement-id="sample-code"><a href="#"><span class="smaller">Code</span></a></li>
+						
+												<section class="searchbar-wrapper mobile">
+							<input class="active" type="text" autocomplete="off" placeholder="Search this video…">
+						</section>
+						
+					</ul>
+				</section>
+
+			</section>
+
+			<!-- supplements -->
+			<section class="row">
+
+				<section class="column large-10 small-12  large-centered no-padding-top no-padding-bottom">
+
+					<ul class="supplements hidden">
+
+						<!-- details -->
+						<li class="supplement details " data-supplement-id="details">
+							
+														<h1>Swift packages: Resources and localization</h1>
+							<p>Bring your resources along for the ride when you organize and share code using Swift packages. Discover how to include assets like images and storyboards in a package and how to access them from code. And learn how to add localized strings to make your code accessible to people around the world.
+
+To get the most out of this session, you should be familiar with Swift and packaging code. For an overview, watch “Creating Swift Packages” from WWDC19.</p>
+							
+							
+														<h2>Resources</h2>
+
+							<ul class="links small">
+																																					<li class="developerForum"><a href="https://developer.apple.com/forums/post/question?&tag1=264&tag2=422&tag3=235&tag4=236" target="_blank">Have a question? Ask with tag wwdc20-10169</a></li>
+																																							<li class="document"><a href="https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/LanguageandLocaleIDs/LanguageandLocaleIDs.html" target="_blank">Language and Locale IDs</a></li>
+																																							<li class="document"><a href="https://developer.apple.com/documentation/PackageDescription" target="_blank">PackageDescription</a></li>
+																																							<li class="developerForum"><a href="https://developer.apple.com/forums/search?tags=wwdc20%2d10169" target="_blank">Search the forums for tag wwdc20-10169</a></li>
+																											
+																	<li class="download">
+										<ul class="options">
+																						<li><a href="https://devstreaming-cdn.apple.com/videos/wwdc/2020/10169/3/0F6E83BB-5FF5-4627-9C42-F111EF4B4098/wwdc2020_10169_hd.mp4?dl=1">HD Video</a></li>
+																																	<li><a href="https://devstreaming-cdn.apple.com/videos/wwdc/2020/10169/3/0F6E83BB-5FF5-4627-9C42-F111EF4B4098/wwdc2020_10169_sd.mp4?dl=1">SD Video</a></li>
+																					</ul>
+									</li>
+																
+															</ul>
+							
+														<div class="divider-top margin-top-small padding-bottom-small"></div>
+							<h2>Related Videos</h2>
+														<h4>WWDC22</h4>
+								<ul class="links small">
+																			<li class="video">
+											<a href="/videos/play/wwdc2022/10110">Build global apps: Localization by example</a>
+										</li>
+																			<li class="video">
+											<a href="/videos/play/wwdc2022/110401">Create Swift Package plugins</a>
+										</li>
+																			<li class="video">
+											<a href="/videos/play/wwdc2022/10019">Get to know Create ML Components</a>
+										</li>
+																	</ul>
+														<h4>WWDC 2020</h4>
+								<ul class="links small">
+																			<li class="video">
+											<a href="/videos/play/wwdc2020/10142">Build scalable enterprise app suites</a>
+										</li>
+																			<li class="video">
+											<a href="/videos/play/wwdc2020/10147">Distribute binary frameworks as Swift packages</a>
+										</li>
+																			<li class="video">
+											<a href="/videos/play/wwdc2020/10096">Explore Packages and Projects with Xcode Playgrounds</a>
+										</li>
+																			<li class="video">
+											<a href="/videos/play/wwdc2020/10170">What's new in Swift</a>
+										</li>
+																	</ul>
+														<h4>WWDC 2019</h4>
+								<ul class="links small">
+																			<li class="video">
+											<a href="/videos/play/wwdc2019/408">Adopting Swift Packages in Xcode</a>
+										</li>
+																			<li class="video">
+											<a href="/videos/play/wwdc2019/403">Creating Great Localized Experiences with Xcode 11</a>
+										</li>
+																			<li class="video">
+											<a href="/videos/play/wwdc2019/410">Creating Swift Packages</a>
+										</li>
+																	</ul>
+														
+							
+						</li>
+
+						<!-- transcript -->
+						<li class="supplement transcript" data-supplement-id="transcript" data-shortcut-base-url="/videos/play/wwdc2020/10169/">
+							<section>
+								<div class="margin-bottom-small download-transcript"><span id="get-transcript" class="icon icon-before icon-downloadcircle">Download</span></div>
+								<p><span class="sentence"><span data-start="3.0">Hello and welcome to WWDC.</p><p></span></span><span class="sentence"><span data-start="7.0">I'm Anders, </span></span><span class="sentence"><span data-start="9.0">and today I'll be talking about Swift package resources and localization. </span></span><span class="sentence"><span data-start="13.0">First we'll see how to add resources to a Swift package. </span></span><span class="sentence"><span data-start="17.0">Next, we'll talk about what happens when the package is built, </span></span><span class="sentence"><span data-start="20.0">and how code in a package can use resources at runtime. </span></span><span class="sentence"><span data-start="24.0">Finally, we'll take a look at how to localize the resources in a package.</p><p></span></span><span class="sentence"><span data-start="29.0">Let's start by adding resources to a package. </span></span><span class="sentence"><span data-start="33.0">Xcode 11 introduced support for Swift packages, </span></span><span class="sentence"><span data-start="36.0">letting you create packages </span></span><span class="sentence"><span data-start="38.0">as well as use existing packages in your Xcode projects. </span></span><span class="sentence"><span data-start="41.0">You can implement a package in Swift or in any of the C-based languages. </span></span><span class="sentence"><span data-start="45.0">And in Xcode 12, you can add resources, </span></span><span class="sentence"><span data-start="48.0">such as images, storyboards, and other files to a package. </span></span><span class="sentence"><span data-start="52.0">You can also localize those resources so that internationalized apps </span></span><span class="sentence"><span data-start="56.0">can take advantage of the functionality your package provides. </span></span><span class="sentence"><span data-start="59.0">And adding resources to a package works with existing APIs, </span></span><span class="sentence"><span data-start="63.0">so it does not affect the OS version requirements of your package. </span></span><span class="sentence"><span data-start="67.0">Let's take a look at how this works. </span></span><span class="sentence"><span data-start="70.0">Here I have a package that implements a SwiftUI view. </span></span><span class="sentence"><span data-start="73.0">It shows the side of a die </span></span><span class="sentence"><span data-start="75.0">and has a button that lets you roll the die. </span></span><span class="sentence"><span data-start="78.0">And one of the things that's new in Xcode 12 </span></span><span class="sentence"><span data-start="80.0">is that it can show previews for SwiftUI views in packages </span></span><span class="sentence"><span data-start="84.0">without having to have a client app in the same workspace. </span></span><span class="sentence"><span data-start="88.0">But as we can see, there's something missing. </span></span><span class="sentence"><span data-start="90.0">This package view is showing a black box instead of the dots on the die. </span></span><span class="sentence"><span data-start="95.0">When I click the button to roll the die, </span></span><span class="sentence"><span data-start="97.0">it picks a new number of dots, but it doesn't display it. </span></span><span class="sentence"><span data-start="100.0">Let's fix that. </span></span><span class="sentence"><span data-start="102.0">I'm going to create an asset catalog </span></span><span class="sentence"><span data-start="104.0">right next to the source code in the DiceUI target.</p><p></span></span><span class="sentence"><span data-start="109.0">Because of its filename suffix, </span></span><span class="sentence"><span data-start="111.0">Xcode will know that it's an asset catalog and will know how to process it. </span></span><span class="sentence"><span data-start="114.0">The asset catalog starts out empty, </span></span><span class="sentence"><span data-start="117.0">but I'm going to add some images that show dice </span></span><span class="sentence"><span data-start="119.0">with various numbers of dots at three different resolutions.</p><p></span></span><span class="sentence"><span data-start="123.0">Now I go into the implementation of the view, </span></span><span class="sentence"><span data-start="126.0">and I replace the Rectangle view with an Image.</p><p></span></span><span class="sentence"><span data-start="130.0">I've chosen the names of my images so they match the names of the dot count, </span></span><span class="sentence"><span data-start="134.0">so I can just pass the name to the initializer.</p><p></span></span><span class="sentence"><span data-start="141.0">I'm going to specify a bundle parameter to indicate that the images should come </span></span><span class="sentence"><span data-start="145.0">from the resource bundle for the module into which my code is built.</p><p></span></span><span class="sentence"><span data-start="155.0">Package resources use existing Foundation APIs of the bundle type </span></span><span class="sentence"><span data-start="159.0">to access resources, </span></span><span class="sentence"><span data-start="161.0">so you can then pass that to any API that takes a bundle parameter. </span></span><span class="sentence"><span data-start="164.0">We'll take a closer look at how this works in a moment. </span></span><span class="sentence"><span data-start="168.0">And then I see that the image of the dice shows up.</p><p></span></span><span class="sentence"><span data-start="173.0">And if I click the "roll" button, </span></span><span class="sentence"><span data-start="175.0">I can see that it picks the different numbers. </span></span><span class="sentence"><span data-start="177.0">Now, I can actually delete the bundle part here, </span></span><span class="sentence"><span data-start="179.0">because with Swift type inference, I can just have .module.</p><p></span></span><span class="sentence"><span data-start="185.0">So here we've seen how you can easily add resources to a Swift package, </span></span><span class="sentence"><span data-start="189.0">and to show the preview while working on the package in Xcode. </span></span><span class="sentence"><span data-start="193.0">Files in a package are processed according to their type, </span></span><span class="sentence"><span data-start="196.0">as indicated by the filename suffix. </span></span><span class="sentence"><span data-start="199.0">Some kinds of files, </span></span><span class="sentence"><span data-start="200.0">such as asset catalogs, storyboards and Core Data models, </span></span><span class="sentence"><span data-start="203.0">have a clear purpose. </span></span><span class="sentence"><span data-start="205.0">These kinds of files can just be added to the package, </span></span><span class="sentence"><span data-start="208.0">and Xcode knows what to do with them.</p><p></span></span><span class="sentence"><span data-start="211.0">Other kinds of files could have a variety of purposes. </span></span><span class="sentence"><span data-start="214.0">A plain text file might be needed at runtime, </span></span><span class="sentence"><span data-start="217.0">or it might only be used during development. </span></span><span class="sentence"><span data-start="220.0">The same is true for images, shell scripts, </span></span><span class="sentence"><span data-start="222.0">and other common types of files.</p><p></span></span><span class="sentence"><span data-start="226.0">For those kinds of files, </span></span><span class="sentence"><span data-start="227.0">you need to declare the intent in the package manifest. </span></span><span class="sentence"><span data-start="230.0">Let's look at an example. </span></span><span class="sentence"><span data-start="233.0">Here is the file system structure of an example package called MyGame </span></span><span class="sentence"><span data-start="237.0">with a single target called GameLogic. </span></span><span class="sentence"><span data-start="240.0">All the target's source files are located underneath the Sources directory, </span></span><span class="sentence"><span data-start="244.0">in a subdirectory with the same name as the target.</p><p></span></span><span class="sentence"><span data-start="248.0">If we look at the contents of the package manifest file, </span></span><span class="sentence"><span data-start="251.0">we see the corresponding product and target definitions </span></span><span class="sentence"><span data-start="253.0">for the GameLogic target. </span></span><span class="sentence"><span data-start="256.0">This is where we're going to declare what to do </span></span><span class="sentence"><span data-start="258.0">with any target files whose purpose is ambiguous.</p><p></span></span><span class="sentence"><span data-start="262.0">To learn more about the syntax of the package manifest </span></span><span class="sentence"><span data-start="265.0">and how it relates to the file system structure, </span></span><span class="sentence"><span data-start="267.0">see the video for the "Adopting Swift Packages in Xcode" session from WWDC 19.</p><p></span></span><span class="sentence"><span data-start="274.0">So let's focus in on the target directory, </span></span><span class="sentence"><span data-start="276.0">under which all the target's sources and resources are located. </span></span><span class="sentence"><span data-start="279.0">There's already a Swift source file there, and the intent is pretty clear: </span></span><span class="sentence"><span data-start="283.0">It should be compiled when the package is built. </span></span><span class="sentence"><span data-start="285.0">We don't need anything extra in the manifest. </span></span><span class="sentence"><span data-start="288.0">Now let's add an asset catalog. </span></span><span class="sentence"><span data-start="291.0">An asset catalog is a directory with a well-defined filename suffix </span></span><span class="sentence"><span data-start="294.0">and a structure. </span></span><span class="sentence"><span data-start="296.0">It'll be processed at build time and included in the client of the package. </span></span><span class="sentence"><span data-start="300.0">We don't need anything special in the manifest. </span></span><span class="sentence"><span data-start="303.0">The same thing is true if we add a storyboard. </span></span><span class="sentence"><span data-start="306.0">It has a clear purpose, too, </span></span><span class="sentence"><span data-start="308.0">and will be compiled the same way as if it were in an Xcode project.</p><p></span></span><span class="sentence"><span data-start="312.0">Next, let's add a plain text file. </span></span><span class="sentence"><span data-start="315.0">Now things get a bit more interesting. </span></span><span class="sentence"><span data-start="317.0">Text files could be used for all kinds of things, </span></span><span class="sentence"><span data-start="320.0">so it isn't obvious what Xcode should do with it. </span></span><span class="sentence"><span data-start="323.0">Maybe it's a resource for use at runtime, </span></span><span class="sentence"><span data-start="325.0">or maybe it's just some internal development notes. </span></span><span class="sentence"><span data-start="328.0">In this example, we don't want Xcode to treat it as a resource. </span></span><span class="sentence"><span data-start="332.0">We add it to the list of excluded files in the manifest, </span></span><span class="sentence"><span data-start="335.0">which will cause it to be ignored when the package is built.</p><p></span></span><span class="sentence"><span data-start="339.0">We can also add a directory full of files and folders, </span></span><span class="sentence"><span data-start="342.0">such as the sketches and design documents for creating the artwork in the game. </span></span><span class="sentence"><span data-start="346.0">Just as for a file, we can add the name or sub-path of a directory </span></span><span class="sentence"><span data-start="350.0">to the exclusion list in the manifest. </span></span><span class="sentence"><span data-start="352.0">This will cause that directory and everything under it </span></span><span class="sentence"><span data-start="354.0">to be skipped when the package is built.</p><p></span></span><span class="sentence"><span data-start="357.0">Now let's add a stand-alone image file. </span></span><span class="sentence"><span data-start="360.0">In this case, we will need it at runtime, </span></span><span class="sentence"><span data-start="362.0">so we add it to the manifest as a resource, </span></span><span class="sentence"><span data-start="364.0">and we specify the process action for it. </span></span><span class="sentence"><span data-start="368.0">Most resources should use the process action </span></span><span class="sentence"><span data-start="371.0">so that they are transformed as appropriate at build time. </span></span><span class="sentence"><span data-start="374.0">The exact type of processing that will happen </span></span><span class="sentence"><span data-start="376.0">depends on the platform for which the package is built.</p><p></span></span><span class="sentence"><span data-start="380.0">Now let's add a directory full of files that our sample game will need at runtime. </span></span><span class="sentence"><span data-start="385.0">In this case, there is a whole hierarchy of files and folders underneath it.</p><p></span></span><span class="sentence"><span data-start="390.0">We want all of it to be available at runtime, </span></span><span class="sentence"><span data-start="393.0">including the directory structure. </span></span><span class="sentence"><span data-start="395.0">So we declare it as a resource, </span></span><span class="sentence"><span data-start="397.0">but this time, we specify the "copy" action. </span></span><span class="sentence"><span data-start="400.0">This will cause it to be copied exactly as it is, </span></span><span class="sentence"><span data-start="403.0">preserving its directory structure. </span></span><span class="sentence"><span data-start="406.0">So now we've seen how to add several different kinds of files </span></span><span class="sentence"><span data-start="408.0">to a package target, </span></span><span class="sentence"><span data-start="410.0">and we've seen how to declare the intent </span></span><span class="sentence"><span data-start="412.0">for any cases where it isn't clear from the file type. </span></span><span class="sentence"><span data-start="415.0">As we saw, </span></span><span class="sentence"><span data-start="416.0">any resource can be either processed or copied byte for byte. </span></span><span class="sentence"><span data-start="420.0">The "process" action is usually the recommended choice, </span></span><span class="sentence"><span data-start="423.0">because it will apply the appropriate built-in rules for the platform. </span></span><span class="sentence"><span data-start="427.0">This might include converting a storyboard or asset catalog </span></span><span class="sentence"><span data-start="430.0">into a form suitable for use at runtime, </span></span><span class="sentence"><span data-start="433.0">or it might include compressing an image, etcetera.</p><p></span></span><span class="sentence"><span data-start="437.0">If the file type is unknown, </span></span><span class="sentence"><span data-start="439.0">or no special processing is needed for the platform, </span></span><span class="sentence"><span data-start="442.0">the file will be copied.</p><p></span></span><span class="sentence"><span data-start="445.0">The processing rules are applied recursively </span></span><span class="sentence"><span data-start="447.0">to every file under a directory, </span></span><span class="sentence"><span data-start="449.0">and each resulting output file is included in the product as a separate resource.</p><p></span></span><span class="sentence"><span data-start="455.0">The "copy" action is appropriate </span></span><span class="sentence"><span data-start="456.0">when you want to make an exact copy of the resource, regardless of its type.</p><p></span></span><span class="sentence"><span data-start="462.0">Copying doesn't do any transformation at all, </span></span><span class="sentence"><span data-start="464.0">so it can be used, for example, </span></span><span class="sentence"><span data-start="466.0">to copy a source file that would normally have been compiled </span></span><span class="sentence"><span data-start="469.0">if you want to use it as a template at runtime.</p><p></span></span><span class="sentence"><span data-start="473.0">Copying can also be used if you want to include a whole directory </span></span><span class="sentence"><span data-start="476.0">and preserve its hierarchical structure. </span></span><span class="sentence"><span data-start="479.0">So what happens to the files in a target when it's built? </span></span><span class="sentence"><span data-start="482.0">For example, here we have a package, and an app that uses the package. </span></span><span class="sentence"><span data-start="487.0">The package contains source files as well as resource files. </span></span><span class="sentence"><span data-start="491.0">Each target's sources get compiled into a code module </span></span><span class="sentence"><span data-start="494.0">and linked into the client app. </span></span><span class="sentence"><span data-start="496.0">Each target's resources are processed into a resource bundle for that module, </span></span><span class="sentence"><span data-start="501.0">which then gets embedded into the app.</p><p></span></span><span class="sentence"><span data-start="504.0">On Apple platforms, </span></span><span class="sentence"><span data-start="506.0">applications and app extensions are bundles, </span></span><span class="sentence"><span data-start="508.0">so nothing more needs to be done. </span></span><span class="sentence"><span data-start="510.0">The resource bundles for each package module </span></span><span class="sentence"><span data-start="513.0">are a part of the app bundle, </span></span><span class="sentence"><span data-start="514.0">and will therefore be available at runtime.</p><p></span></span><span class="sentence"><span data-start="517.0">When building an unbundled product, such as a command line tool, </span></span><span class="sentence"><span data-start="521.0">the resource bundles would need to be installed alongside the tool.</p><p></span></span><span class="sentence"><span data-start="525.0">There's one more thing to note about the package manifest, </span></span><span class="sentence"><span data-start="529.0">and that is the minimum tools version. </span></span><span class="sentence"><span data-start="531.0">The Swift Package Manager is part of the Swift toolchain. </span></span><span class="sentence"><span data-start="535.0">Support for package resources is new in Swift 5.3, </span></span><span class="sentence"><span data-start="538.0">so the package manifest needs to declare 5.3 </span></span><span class="sentence"><span data-start="541.0">as its required tools version. </span></span><span class="sentence"><span data-start="544.0">But how does this relate to the Xcode version? </span></span><span class="sentence"><span data-start="547.0">Every Xcode release includes a version of the Swift toolchain. </span></span><span class="sentence"><span data-start="551.0">Xcode 11 was the first version to support Swift packages, </span></span><span class="sentence"><span data-start="555.0">and its Swift toolchain version was 5.1. </span></span><span class="sentence"><span data-start="558.0">In Xcode 12, the included version of the Swift toolchain is 5.3. </span></span><span class="sentence"><span data-start="563.0">The tool version should be set to the lowest version </span></span><span class="sentence"><span data-start="565.0">that supports the features needed by the package. </span></span><span class="sentence"><span data-start="568.0">This is because any package or project that uses it </span></span><span class="sentence"><span data-start="571.0">will also need to have that tool version or later </span></span><span class="sentence"><span data-start="573.0">in order to build the package. </span></span><span class="sentence"><span data-start="575.0">Now that we have added the resources to the package, </span></span><span class="sentence"><span data-start="578.0">let's talk about how to access them from code. </span></span><span class="sentence"><span data-start="581.0">As we saw, </span></span><span class="sentence"><span data-start="582.0">you use Foundation's Bundle API to access package resources at runtime. </span></span><span class="sentence"><span data-start="588.0">Foundation is available on all platforms that support Swift packages, </span></span><span class="sentence"><span data-start="591.0">so this provides a consistent and platform-neutral way </span></span><span class="sentence"><span data-start="594.0">to access resources, regardless of what kind of artifacts </span></span><span class="sentence"><span data-start="597.0">the build system creates for a particular platform.</p><p></span></span><span class="sentence"><span data-start="601.0">When Xcode builds a package target that contains resources, </span></span><span class="sentence"><span data-start="604.0">it synthesizes an accessor for the resource bundle </span></span><span class="sentence"><span data-start="607.0">and includes it in the code module that it creates for the target. </span></span><span class="sentence"><span data-start="611.0">The module can then access its resource bundle </span></span><span class="sentence"><span data-start="614.0">regardless of whether it's implemented in Swift or Objective-C. </span></span><span class="sentence"><span data-start="618.0">The bundle object that's returned is specific to each code module, </span></span><span class="sentence"><span data-start="621.0">but the way you access it is always the same in the source code.</p><p></span></span><span class="sentence"><span data-start="626.0">Here's an example of using Bundle APIs to access the files in the resource bundle </span></span><span class="sentence"><span data-start="631.0">from both Swift and Objective-C.</p><p></span></span><span class="sentence"><span data-start="634.0">In both languages, the accessor returns a Foundation Bundle object </span></span><span class="sentence"><span data-start="638.0">that can be used to look up resources by name.</p><p></span></span><span class="sentence"><span data-start="642.0">But the resource bundle can also be passed to any system API </span></span><span class="sentence"><span data-start="645.0">that takes a bundle as a parameter. </span></span><span class="sentence"><span data-start="648.0">In the example shown here, it's being passed to a UIImage method </span></span><span class="sentence"><span data-start="652.0">that can look up images from the package resource bundle.</p><p></span></span><span class="sentence"><span data-start="656.0">When adding a resource to a package, </span></span><span class="sentence"><span data-start="658.0">you should add it to the target for the code module that uses it. </span></span><span class="sentence"><span data-start="662.0">The resource bundle accessor is only visible to the code </span></span><span class="sentence"><span data-start="665.0">that's in the same module as the resources. </span></span><span class="sentence"><span data-start="668.0">If you need to provide resources to other modules, </span></span><span class="sentence"><span data-start="671.0">it's best to do so by adding specific typed accessors </span></span><span class="sentence"><span data-start="674.0">that vend the individual resources. </span></span><span class="sentence"><span data-start="677.0">It's generally not recommended </span></span><span class="sentence"><span data-start="678.0">to vend the whole resource bundle to other modules, </span></span><span class="sentence"><span data-start="681.0">because that would create an external dependency </span></span><span class="sentence"><span data-start="684.0">on the specific names of resources.</p><p></span></span><span class="sentence"><span data-start="687.0">Xcode 12 also lets you add localized resources to your packages. </span></span><span class="sentence"><span data-start="692.0">Let's take a look at localizing the text in the sample package we saw earlier.</p><p></span></span><span class="sentence"><span data-start="697.0">First thing I'm going to do </span></span><span class="sentence"><span data-start="699.0">is to add a defaultLocalization parameter to my package manifest.</p><p></span></span><span class="sentence"><span data-start="711.0">This declares the language I'm using during development </span></span><span class="sentence"><span data-start="713.0">and will be used as the fallback localization at runtime </span></span><span class="sentence"><span data-start="716.0">if no better match is available. </span></span><span class="sentence"><span data-start="718.0">This is needed for any package that contains resources.</p><p></span></span><span class="sentence"><span data-start="722.0">Next, I'm going to create a localization directory </span></span><span class="sentence"><span data-start="725.0">for my default localization, English...</p><p></span></span><span class="sentence"><span data-start="728.0">and name it "en.lproj." </span></span><span class="sentence"><span data-start="731.0">And inside, I create a file called "Localizable.strings." </span></span><span class="sentence"><span data-start="744.0">I add one entry to the strings file </span></span><span class="sentence"><span data-start="746.0">that just maps the localizable string key I used in the code </span></span><span class="sentence"><span data-start="749.0">to the English word "roll." </span></span><span class="sentence"><span data-start="753.0">Now I'm going to do the same thing, but for French. </span></span><span class="sentence"><span data-start="756.0">I create a directory called "fr.lproj," </span></span><span class="sentence"><span data-start="759.0">and I create a "Localizable.strings" file in it.</p><p></span></span><span class="sentence"><span data-start="772.0">In this file, I'm going to add a mapping from the English string key...</p><p></span></span><span class="sentence"><span data-start="778.0">to the French translation of the word. </span></span><span class="sentence"><span data-start="781.0">Now I'm going to do the same thing with the Text view </span></span><span class="sentence"><span data-start="783.0">as I did with the Image view, </span></span><span class="sentence"><span data-start="784.0">which is to pass in the resource bundle for the module that contains my code. </span></span><span class="sentence"><span data-start="789.0">This uses Foundation support for localization </span></span><span class="sentence"><span data-start="791.0">to find the right localized content based on the user's chosen language.</p><p></span></span><span class="sentence"><span data-start="806.0">The preview is still showing in English, </span></span><span class="sentence"><span data-start="808.0">and that's because my system language is English. </span></span><span class="sentence"><span data-start="811.0">But with SwiftUI, we can customize our preview. </span></span><span class="sentence"><span data-start="814.0">For example, we can add an environment override </span></span><span class="sentence"><span data-start="816.0">to see the French localization in the preview. </span></span><span class="sentence"><span data-start="819.0">And we can see that it's using the localized strings </span></span><span class="sentence"><span data-start="822.0">from the generated resource bundle.</p><p></span></span><span class="sentence"><span data-start="825.0">As we saw in the demo, </span></span><span class="sentence"><span data-start="827.0">a localization directory has a .lproj filename suffix. </span></span><span class="sentence"><span data-start="831.0">Localization directories can be included in package targets </span></span><span class="sentence"><span data-start="834.0">without mentioning them in the manifest </span></span><span class="sentence"><span data-start="836.0">because the .lproj suffix makes their purpose clear.</p><p></span></span><span class="sentence"><span data-start="840.0">A localization directory usually contains string files </span></span><span class="sentence"><span data-start="843.0">and string dictionary files for translating text, </span></span><span class="sentence"><span data-start="846.0">but it can also contain customized versions </span></span><span class="sentence"><span data-start="848.0">of individual resources in the package. </span></span><span class="sentence"><span data-start="851.0">It's also possible to localize the contents of an asset catalog. </span></span><span class="sentence"><span data-start="855.0">This lets you provide different artwork for specific localizations </span></span><span class="sentence"><span data-start="859.0">where that's appropriate.</p><p></span></span><span class="sentence"><span data-start="861.0">You can learn more about how to do this </span></span><span class="sentence"><span data-start="863.0">in the "Creating Great Localized Experiences" session </span></span><span class="sentence"><span data-start="866.0">from WWDC 19.</p><p></span></span><span class="sentence"><span data-start="869.0">When you add localized resources to a package, </span></span><span class="sentence"><span data-start="872.0">you need to declare the default localization in the package manifest.</p><p></span></span><span class="sentence"><span data-start="876.0">This uses the same kind of language ID </span></span><span class="sentence"><span data-start="878.0">that is used for all localization on Apple platforms </span></span><span class="sentence"><span data-start="881.0">and specifies the language that will be used as a last resort </span></span><span class="sentence"><span data-start="884.0">if no preferred language is available. </span></span><span class="sentence"><span data-start="887.0">You can find more information about this topic </span></span><span class="sentence"><span data-start="889.0">in the "Language and Locale IDs" document on developer.apple.com. </span></span><span class="sentence"><span data-start="894.0">In this video, </span></span><span class="sentence"><span data-start="895.0">we've seen how to add resources to a Swift package, </span></span><span class="sentence"><span data-start="898.0">and how Xcode builds resource bundles </span></span><span class="sentence"><span data-start="900.0">that let you access those resources at runtime. </span></span><span class="sentence"><span data-start="903.0">We also saw how to localize the resources in your package.</p><p></span></span><span class="sentence"><span data-start="907.0">Xcode lets you create Swift packages and also take advantage </span></span><span class="sentence"><span data-start="911.0">of a great and growing ecosystem of existing packages. </span></span><span class="sentence"><span data-start="914.0">Xcode 12 makes it easier to develop packages containing SwiftUI views </span></span><span class="sentence"><span data-start="918.0">by letting you interact with your views even in the absence of a client app. </span></span><span class="sentence"><span data-start="923.0">And the support for localized package resources </span></span><span class="sentence"><span data-start="926.0">lets you create packages whose functionality is available </span></span><span class="sentence"><span data-start="928.0">to people all over the world. </span></span><span class="sentence"><span data-start="931.0">Thank you, and enjoy the rest of WWDC 20.</span></span></p>
+							</section>
+						</li>
+
+						<!-- sample code -->
+						<li class="supplement sample-code" data-supplement-id="sample-code">
+							<section>
+								<ul class="no-bullet padding-top-small margin-bottom">
+																		<li class="sample-code-main-container">
+										<button class="btn-copy-code">Copy Code</button>
+										<p>4:09 - <a class="jump-to-time-sample" href="/videos/play/wwdc2020/10169/?time=249" data-start-time="249">Package Manifest file</a></p>
+									<pre class="code-source"><code><span class="syntax-comment">// swift-tools-version:5.3</span>
+<span class="syntax-keyword">import</span> PackageDescription
+
+<span class="syntax-keyword">let</span> package <span class="syntax-operator">=</span> <span class="syntax-type">Package</span>(name: <span class="syntax-string">&quot;MyGame&quot;</span>,
+    products: [
+        .library(name: <span class="syntax-string">&quot;GameLogic&quot;</span>,
+            targets: [<span class="syntax-string">&quot;GameLogic&quot;</span>])
+    ],
+    targets: [
+        .target(name: <span class="syntax-string">&quot;GameLogic&quot;</span>,
+            excludes: [
+                <span class="syntax-string">&quot;Internal Notes.txt&quot;</span>,
+                <span class="syntax-string">&quot;Artwork Creation&quot;</span>],
+            resources: [
+                .process(<span class="syntax-string">&quot;Logo.png&quot;</span>),
+                .copy(<span class="syntax-string">&quot;Game Data&quot;</span>)]
+        )
+    ]
+)</code></pre>
+									</li>
+																	</ul>
+							</section>
+						</li>
+
+						<!-- search -->
+						<li class="supplement search active" data-supplement-id="search">
+
+							<section class="transcript-results-summary">
+								<p class="message smaller lighter"><!-- to be populated --></p>
+								<p class="instructions smaller lighter text-center">Looking for something specific? Enter a topic above and jump straight to the good stuff.</p>
+								<p class="error smaller lighter italic text-center" style="display:none;">An error occurred when submitting your query. Please check your Internet connection and try again.</p>
+							</section>
+
+							<!-- search results -->
+							<ul class="transcript-results row">
+															</ul>
+
+						</li>
+
+					</ul>
+
+				</section>
+
+			</section>
+
+		</section>
+
+		<input id="analytics-meta" type="hidden" data-event-name="WWDC20" 
+		data-event-id="wwdc2020-10169" 
+		data-session-id="10169" 
+		data-video-name="Swift packages: Resources and localization" 
+		data-session-response-id="">
+	</main>
+
+	<link rel="stylesheet" href="/assets/styles/footer.dist.css?23182355271">
+<footer id="footer" class="footer" role="contentinfo" aria-labelledby="footer-label">
+    <div class="footer-content">
+        <h2 class="footer-label" id="footer-label">Developer Footer</h2>
+		
+		<developer-breadcrumbs>
+			<li class="footer-breadcrumbs-item"><a href="/videos/">Videos</a></li>
+				<li class="footer-breadcrumbs-item"><a href="/videos/wwdc2020/">WWDC20</a></li>				<li class="footer-breadcrumbs-item">Swift packages: Resources and localization</li>
+			
+		</developer-breadcrumbs>
+		        <nav class="footer-directory" aria-label="Apple Developer Directory" role="navigation">
+	<!--googleoff: all-->
+	<div class="footer-directory-column">
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-platform" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-platform">
+				<h3 class="footer-directory-column-section-title">Platforms</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-platform" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/ios/">iOS</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/ipados/">iPadOS</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/macos/">macOS</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/tvos/">tvOS</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/visionos/">visionOS</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/watchos/">watchOS</a></li>
+			</ul>
+		</div>
+
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-tools" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-tools">
+				<h3 class="footer-directory-column-section-title">Tools</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-tools" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/swift/">Swift</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/swiftui/">SwiftUI</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/swift-playgrounds/">Swift Playgrounds</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/testflight/">TestFlight</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/xcode/">Xcode</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/xcode-cloud/">Xcode Cloud</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/sf-symbols/">SF Symbols</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="footer-directory-column">
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-topics" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-topics">
+				<h3 class="footer-directory-column-section-title">Topics &amp; Technologies</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-topics" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/accessibility/">Accessibility</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/accessories/">Accessories</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/app-extensions/">App Extensions</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/app-store/">App Store</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/audio/">Audio &amp; Video</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/augmented-reality/">Augmented Reality</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/business/">Business</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/design/">Design</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/distribute/">Distribution</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/education/">Education</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/fonts/">Fonts</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/games/">Games</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/health-fitness/">Health &amp; Fitness</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/in-app-purchase/">In-App Purchase</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/localization/">Localization</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/maps/">Maps &amp; Location</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/machine-learning/">Machine Learning</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://opensource.apple.com">Open Source</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/security/">Security</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/safari/">Safari &amp; Web</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="footer-directory-column">
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-resources" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-resources">
+				<h3 class="footer-directory-column-section-title">Resources</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-resources" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/documentation/">Documentation</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/learn/curriculum/">Curriculum</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/download/">Downloads</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/forums/">Forums</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/videos/">Videos</a></li>
+			</ul>
+		</div>
+
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-support" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-support">
+				<h3 class="footer-directory-column-section-title">Support</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-support" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/support/articles/">Support Articles</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/contact/">Contact Us</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/bug-reporting/">Bug Reporting</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/system-status/">System Status</a></li>
+			</ul>
+		</div>
+
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-account" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-account">
+				<h3 class="footer-directory-column-section-title">Account</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-account" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/account/">Apple Developer</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://appstoreconnect.apple.com/">App Store Connect</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/account/ios/certificate/">Certificates, IDs, &amp; Profiles</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://feedbackassistant.apple.com/">Feedback Assistant</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="footer-directory-column">
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-programs" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-programs">
+				<h3 class="footer-directory-column-section-title">Programs</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-programs" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/programs/">Apple Developer Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/programs/enterprise/">Apple Developer Enterprise Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/app-store/small-business-program/">App Store Small Business Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://mfi.apple.com/">MFi Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/programs/news-partner/">News Partner Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/programs/video-partner/">Video Partner Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/security-bounty/">Security Bounty Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/programs/security-research-device/">Security Research Device Program</a></li>
+			</ul>
+		</div>
+
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-events" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-events">
+				<h3 class="footer-directory-column-section-title">Events</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-events" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/events/">Meet with Apple Experts</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/accelerator/">App Accelerators</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/app-store/app-store-awards/">App Store Awards</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/design/awards/">Apple Design Awards</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/learn/experts/#academies">Apple Developer Academies</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/entrepreneur-camp/">Entrepreneur Camp</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/wwdc/">WWDC</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--googleon: all-->
+</nav>
+        <section class="footer-mini" vocab="http://schema.org/" typeof="Organization">
+	<div class="footer-mini-news">
+		<div class="copy">
+			Get the <a href="https://apps.apple.com/us/app/apple-developer/id640199958">Apple Developer app</a>.
+		</div>
+		<div class="content">
+			<div class="color-scheme-toggle"
+				role="radiogroup"
+				tabindex="0"
+				aria-label="Select a color scheme preference">
+
+				<label data-color-scheme-option="light">
+
+					<input type="radio" value="light" autocomplete="off"
+						onchange="window.setPreferredColorScheme(event.target.value)" />
+
+					<div class="text">Light</div>
+
+				</label>
+
+				<label data-color-scheme-option="dark">
+
+					<input type="radio" value="dark" autocomplete="off"
+						onchange="window.setPreferredColorScheme(event.target.value)" />
+
+					<div class="text">Dark</div>
+
+				</label>
+
+				<label data-color-scheme-option="auto">
+
+					<input type="radio" value="auto" autocomplete="off"
+						onchange="window.setPreferredColorScheme(event.target.value)" />
+
+					<div class="text">Auto</div>
+
+				</label>
+
+			</div>
+			<script async src="/assets/scripts/color-scheme-toggle.js"></script>
+		</div>
+	</div>
+	<link rel="stylesheet" href="/assets/styles/language-dropdown.css?23182355271">
+	<div class="language-dropdown dropdown-container legacy-form hidden">
+		<select class="dropdown" aria-label="Language Dropdown"></select>
+		<span class="dropdown-icon icon icon-chevrondown" aria-hidden="true"></span>
+	</div>
+	<script src="/assets/scripts/language-dropdown.js?23182355271"></script>
+	<div class="footer-mini-legal">
+		<div class="footer-mini-legal-copyright">Copyright ©  2024 <a href="https://www.apple.com">Apple Inc.</a> All rights reserved.</div>
+		<div class="footer-mini-legal-links">
+			<a class="footer-mini-legal-link" href="https://www.apple.com/legal/internet-services/terms/site.html" class="first">Terms of Use</a>
+			<a class="footer-mini-legal-link" href="https://www.apple.com/legal/privacy/">Privacy Policy</a>
+			<a class="footer-mini-legal-link" href="/support/terms/">Agreements and Guidelines</a>
+		</div>
+	</div>
+</section>
+    </div>
+</footer>
+
+	<script src="/assets/scripts/params.js"></script>
+	<script src="/assets/scripts/watchable.js"></script>
+	<script src="/assets/scripts/timeout.js"></script>
+	
+	<script src="/videos/scripts/play/play.js?39182354271"></script>
+	<script src="/videos/scripts/hls/rtc.min.js?39182354271"></script>
+	<script src="/videos/scripts/hls/hls.min.js?13202352334"></script>
+	
+</body>
+</html>

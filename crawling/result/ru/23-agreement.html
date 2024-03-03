@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>User agreement — Habr Account</title>
+    
+    <link href="/css/1709212106/main.css" rel="stylesheet" media="all" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#77a2b6">
+<meta name="application-name" content="account.habr"/>
+<meta name="msapplication-TileColor" content="#77a2b6">
+<meta name="theme-color" content="#77a2b6">
+
+    <meta name="robots" content="noindex"/>
+  </head>
+
+  <body>
+    <div class="layout">
+      <div class="layout__notice" id="global_notices"></div>
+        <div class="layout__header">
+  <div class="layout__overlay hidden" id="overlay"></div>
+  <div class="layout__header-inner">
+    <div class="layout__logo-wrapper" id="logo-wrapper">
+      <a href="https://account.habr.com/?consumer=default" class="layout__header-logo">
+          <svg class="logo">
+            <use xlink:href="/img/icons-sprite.svg#logo_en"/>
+          </svg>
+      </a>
+      </div>
+      <div class="layout__header-buttons layout__header-buttons_desktop">
+        <a href="https://account.habr.com/register/?consumer=default" class="button button_primary">Sign Up</a>
+        <a href="https://account.habr.com/login/?consumer=default" class="button button_outline">Log in</a>
+      </div>
+
+      <div class="layout__header-buttons layout__header-buttons_mobile">
+        <a href="https://account.habr.com/login/?consumer=default" class="button button_icon button_outline">
+          <svg class="svg-icon svg-icon_exit" width="16" height="16">
+            <use xlink:href="/img/icons-sprite.svg#header-user"/>
+          </svg>
+        </a>
+      </div>
+  </div>
+</div>
+
+<script>
+  const dropdown = document.querySelector('#dropdown');
+  const overlay = document.querySelector('#overlay');
+  const dropdownControl = document.querySelector('#dropdown-control');
+  const burgerControl = document.querySelector('#burger-control');
+  const logoWrapper = document.querySelector('#logo-wrapper');
+
+  document.addEventListener('click', function(e) {
+    if (dropdown) {
+      const isClickInside = logoWrapper.contains(e.target);
+      const dropdownClosed = dropdown.classList.contains('hidden');
+      if (!isClickInside && !dropdownClosed) {
+        dropdown.classList.add('hidden');
+        overlay.classList.add('hidden');
+        dropdownControl.classList.remove('reverted');
+      }
+    }
+  });
+  const toggleMenu = () => {
+    dropdown.classList.toggle('hidden');
+    overlay.classList.toggle('hidden');
+    dropdownControl.classList.toggle('reverted');
+  }
+  if (dropdownControl) {
+    dropdownControl.onclick = toggleMenu;
+  }
+  if (burgerControl) {
+    burgerControl.onclick = toggleMenu;
+  }
+</script>
+
+  <div class="layout__page">
+    <div class="shadow-box">
+      <div class="shadow-box__title">User Agreement (hereinafter referred to as the “Agreement”)</div>
+      <div class="html-text html-text__agreement"><div class="html-text__agreement-preface">
+  <div class="html-text__agreement-description">
+    <p>This document &laquo;User Agreement&raquo; is&nbsp;an&nbsp;offer of&nbsp;Habr Blockchain Publishing LTD (hereinafter referred to&nbsp;as&nbsp;&laquo;Habr&raquo;) to&nbsp;enter into the Agreement under the terms and conditions set out below.</p>
+  </div>
+  <div class="html-text__agreement-order">
+    Habr Blockchain Publishing LTD<br/>
+    Entered into force on 09.03.2021
+  </div>
+</div>
+
+<div>
+  <ol>
+    <li>
+      <h2 id="1">General Provisions</h2>
+      <ol>
+        <li>
+          <p id="1.1">The following terms and definitions apply in this document and the resulting or relevant relations of the Parties:</p>
+          <ol>
+            <li id="1.1.a">The Agreement means this document with all additions, amendments and binding documents stipulated therein, as well as the agreement concluded on its basis. </li>
+            <li id="1.1.b">The User means a capable individual aged 18 and older who has joined this Agreement in his/her own benefit or acts on behalf of and in the benefit of the legal entity being represented by him/her. </li>
+            <li id="1.1.c">The Website/Websites means any of the automated information systems available on the Internet at network addresses in the following domains (including subdomains unless there are separate agreements to govern use of such subdomains): <a href="https://habr.com">habr.com</a>, <a href="https://qna.habr.com">qna.habr.com</a>, <a href="https://habrastorage.org">habrastorage.org</a>.</li>
+            <li id="1.1.d">The Mobile Application means a computer program intended for installation and use on the Device, which allows the User to access the Services using a communication network. </li>
+            <li id="1.1.e">The Application means computer programs and/or databases, including the Website and the Mobile Application, designed to provide an access to the Services using the Device for information purposes. </li>
+            <li id="1.1.f">The Device means a personal computer, tablet, mobile phone, communicator, smartphone, and other device that allows using the Application and/or Services for their functional purpose. </li>
+            <li id="1.1.g">The Service means a scope of services rendered to the User by using the Application. </li>
+            <li id="1.1.h">The Content means images, text, audio and video materials, as well as other objects of copyright and (or) related rights, as well as non-information and messages of any nature. </li>
+            <li id="1.1.i">The Habr Account means the unified system of registration and authorization in the Applications, using the identifier assigned to the User by Habr or in other information systems determined at the sole discretion of Habr. </li>
+            <li id="1.1.j">The Personal Account means the personal part of the Application, to which the User obtains access upon registration and/or authorization in the Application. The Personal Account is intended for storage of the User’s personal data, creation of User’s profile as well as viewing and management of other available functions of the Application and conditions of its use. </li>
+          </ol>
+        </li>
+        <li id="1.2">Other terms and definitions that are not stipulated in paragraph 1.1 hereof may be applied in this Agreement. In this case, such terms are interpreted in accordance with the text of the Agreement. If there is not an unambiguous interpretation of the term or definition in the text of the Agreement and other documents constituting the arrangement on the terms of the Agreement, it’s necessary to apply its interpretation defined first of all by the laws of the Russian Federation and, in the following, by the business practice and scientific doctrine. </li>
+        <li>
+          <p id="1.3">You use the Application and/or the Service provided on its basis in any way and in any form within their declared functionality and purpose, including:</p>
+          <ol>
+            <li id="1.3.a">Registration and/or authorization in the Application with the Habr Account;</li>
+            <li id="1.3.b">Browsing the materials placed in the Application;</li>
+            <li id="1.3.c">Posting or displaying any Content in the Application;</li>
+            <li id="1.3.d">Other use of the functionality of the Application or the rendered Service;</li>
+          </ol>
+          - creates an agreement based on the terms of this Agreement in accordance with the provisions of Articles 428, 437 and 438 of the Civil Code of the Russian Federation.
+        </li>
+        <li id="1.4">This Agreement and the mandatory documents stipulated therein determine the main terms for the use of the Applications, as well as any development and/or addition of new functionality.</li>
+        <li>
+          <p id="1.5">The mandatory term for the use of the Application and the rendering Service on its basis is the full and unconditional acceptance of the terms of the following documents by the User (hereinafter referred to as the “mandatory documents”):</p>
+          <ol>
+            <li id="1.5.a">The Terms of the Website and the Mobile Application of the same name, posted on the pages of this Website and governing the use of the functionality of the Website and the associated Application; </li>
+            <li id="1.5.b">The Privacy Policy posted and/or available on the Internet at: <a href="https://account.habr.com/info/confidential/">https://account.habr.com/info/confidential/</a></li>
+          </ol>
+        </li>
+        <li id="1.6">The rendering of the Services shall be regulated in accordance with the provisions of this Agreement, as well as addendum documents (hereinafter referred to as the “addendum document”) to be published by Habr on the pages of the Websites related thereto and may regulate the use of any particular Service. </li>
+        <li id="1.7">In case of any contraventions between the Agreement and the terms of use of any of the Services separately set forth in the addendum document, the latter prevails. </li>
+        <li id="1.8">The agreement, including its mandatory documents, can be amended by Habr without any special notification. The new version of the Agreement and/or the mandatory documents stipulated therein shall come into force since the moment of posting on the Website or bringing it to the User’s notice in another convenient form, unless otherwise set by the new version of the Agreement and/or the mandatory documents stipulated therein. </li>
+        <li>
+          <p id="1.9">By using any of the possibility listed in the paragraph 1.3 hereof you hereby acknowledge as follows:</p>
+          <ol>
+            <li id="1.9.a">You are at least 18 years old.</li>
+            <li id="1.9.b">You have reviewed the terms and conditions of this Agreement and the mandatory documents stipulated therein in full prior to using the Application and/or the Service rendered on its basis. </li>
+            <li id="1.9.c">You accept all the terms and conditions of this Agreement and the mandatory documents stipulated therein in full without any exceptions and limitations on your part and undertake to adhere to it or terminate the use of the Services. If you do not agree with the terms and conditions of this Agreement and the mandatory documents stipulated therein, or you are not entitled to enter into an agreement on their basis, you should immediately terminate the use of the Application and the Service provided on its basis. </li>
+          </ol>
+        </li>
+        <li id="1.10">The current version of the Agreement is published at <a href="https://account.habr.com/info/agreement">https://account.habr.com/info/agreement</a>.</li>
+      </ol>
+    </li>
+
+    <li>
+      <h2 id="2">General Terms and Conditions of Application Usage</h2>
+      <ol>
+        <li id="2.1">Browsing the Content posted in the Application in the public domain does not require the mandatory registration and/or authorization of the User.</li>
+        <li id="2.2">Any other use of the Application functions, including the consumption of the Services, is allowed only after registration and authorization of the User in the Application in accordance with the terms set by Habr.</li>
+        <li id="2.3">The list of the functional opportunities of the Application, the use of which requires preliminary registration and/or authorization, as well as the acceptance of addendum documents in certain cases for the consumption of the Services, is determined at the sole discretion of Habr and may be changed from time to time.</li>
+        <li id="2.4">Upon completion of the registration procedure by using Habr Account, a unique profile is created associated with the User’s Personal Account in the Application that is required to use the majority of the functionality of the Applications and the Services based thereon without separately registering the User in any of the Applications.</li>
+        <li id="2.5">For registration, the User shall provide reliable and complete information about himself/herself on the issues required in the registration form and to keep this information up to date. If the User provides incorrect information, or Habr has reason to believe that the information provided by the User is incomplete or unreliable, Habr is entitled at its discretion to block or delete the User’s profile, as well as to refuse to use the Applications and relevant Services in full or in a certain part.</li>
+        <li id="2.6">Habr retains the right at any time to require the User to confirm the data provided during the registration and to request related supporting documents (in particular - identity documents), the non-provision of which, at the discretion of Habr, may be equated to the provision of unreliable information and entail the consequences provided for in the paragraph 2.5 hereof. In case the User’s data specified in the documents provided by him/her do not correspond to the data provided at the registration, as well as in the case the data provided at the registration does not allow to identify the User, Habr may apply the measures stipulated in the paragraph 2.5 hereof.</li>
+        <li id="2.7">Information about the User contained in the profile and the User’s Personal Account is stored and processed by Habr in accordance with the Privacy Policy.</li>
+        <li id="2.8">When being registered, the User on his/her own chooses his/her login (the unique symbolic name of the User profile) and the password to access the Personal Account. The next change of the User’s password is carried out using the Application software provided in its Personal Account. Habr is entitled to prohibit the use of certain logins, as well as to set requirements for login and password (length, allowed characters, etc.).</li>
+        <li id="2.9">The registered User shall independently determine the procedure for using the Personal Account and other functionality of the Application, including the terms and conditions of using the relevant Service, which, however, under no circumstances may contradict this Agreement with exceptions stipulated in the addendum documents hereto.</li>
+        <li id="2.10">By using the functionality of the Application User can, by its own actions and at its own discretion, disclose to general public (make public in the Application) the information of the User’s profile with the Application including the User’s personal data.
+        </li>
+        <li id="2.11">The procedure and consequences of using the login and password by the User are defined in Section 6 hereof.</li>
+      </ol>
+    </li>
+
+    <li>
+      <h2 id="3">Restrictions of the Application Usage</h2>
+      <p>By accepting the terms and conditions of this Agreement, you understand and acknowledge that:</p>
+      <ol>
+        <li id="3.1">Habr is entitled to set limits and restrictions for the use of the Applications and the Services based thereon for all Users or for certain categories of Users (depending on the User’s location, language of the Service, etc.), including availability/lack of separate functions, maximum period of storage of information and data, special parameters of downloaded information, etc.</li>
+        <li id="3.2">Information about the established restrictions shall be brought to the attention of Users in the form and in a way that is determined by the sole discretion of Habr.</li>
+        <li>
+          <p id="3.3">Unless otherwise provided by the addendum documents hereto for using a separate Service:</p>
+          <ol>
+            <li id="3.3.a">The User uses the Application at his/her own risk. Services are rendered “as is”. Habr shall not assume any liability, including the liability for the compliance of the Application and the Service based thereon with the User’s purposes;</li>
+            <li id="3.3.b">Habr does not guarantee that: The Applications and/or Services comply with the User’s requirements at the time of enforcement hereof and shall correspond to them subsequently; Services will be rendered continuously, quickly, reliably and without errors; the results that can be obtained using the Applications will be accurate and reliable and may be used for any purpose or in any quality (for example, for establishing and/or confirming any facts); the quality of any product, service, information and Content obtained using the Services shall meet the expectations of the User;</li>
+            <li id="3.3.c">Any information and/or materials (including downloadable software, letters, any instructions and manuals for action, etc.), accessible via the Applications, the User may use at his/her own risk and the User is independently liable for the possible consequences of using the mentioned information and/or materials, including any damage to the User’s computer or third parties, any loss of data or any other harm;</li>
+            <li id="3.3.d">Due to the fact the Applications and Services based on them are the subjects of permanent amendments and updating, the form and nature of provided functionality of the Applications and the Services rendered may from time to time change without prior notice to the User. Habr is entitled, if necessary, to terminate (temporarily or finally) the Services performing (or any separate functions within the Services) to all Users in general or to an individual User, in particular without prior notice thereof;</li>
+            <li id="3.3.e">Habr is not liable for any losses caused by the User’s use of the Applications and/or Services based thereon;</li>
+            <li id="3.3.f">In any circumstances, pursuant to Article 15 of the Civil Code of Russia the liability of Habr shall be limited to RUB 20,000 (twenty thousand) and is imposed on it in case of guilt in its actions.</li>
+          </ol>
+        </li>
+        <li id="3.4">If a person is registered as a User on behalf of an authorized company, this means that the company accepts the Agreement and undertakes to protect Habr, its subsidiaries, management, agents and employees from any lawsuits, processes and proceedings related to use of the Applications and/or Services based on them, as well as any liability, including financial liability, in respect of claims, damages, damages, processes, proceedings, court costs and attorneys’ fees.</li>
+        <li id="3.5">Habr has no relation to the Content provided and/or posted by the Users in the Application, and does not verify the content, authenticity and security of such Content or its components, as well as its compliance with the requirements of the applicable laws and the Users’ possession of necessary rights for its distribution and/or use.</li>
+        <li id="3.6">The User is solely liable for the compliance of the Content placed by the User with the requirements of the applicable laws, including liability to third parties in cases where the User’s posting of such Content or its components violates the rights and legitimate interests of third parties, including personal non-property rights of authors, other intellectual rights of third parties, and/or encroaches on their intangible assets.</li>
+        <li id="3.7">The User agrees that Habr shall not be obliged to pre-verify Content of any kind placed and/or distributed by the User through the Applications, as well as that Habr is entitled (but not obliged) to refuse, at its discretion, the User in the placement and/or distribution of such Content to it or deleting any Content accessible through the Applications. The User is aware and agrees that he/she shall independently assess all risks related to the placement and distribution of such Content, including its reliability, completeness or utility.</li>
+        <li>
+          <p id="3.8">In particular, when using the Applications, the User is not entitled to:</p>
+          <ol>
+            <li id="3.8.a">upload, send, transmit or otherwise distribute information that is illegal, harmful, defamatory, offends morality, demonstrates (or propagates) violence and cruelty, violates intellectual property rights, promotes hatred and/or discrimination people on racial, ethnic, sexual, religious, social grounds, contains insults to any person or organization, contains elements (or is propaganda) of pornography, children erotica, constitute an advertisement (or a promotion) sexual services (including under the guise of other services), explains the procedure of manufacture, application or other use of drugs or their analogues, explosives or other weapons;</li>
+            <li id="3.8.b">violate the rights of third parties, including minors and/or to harm them in any form;</li>
+            <li id="3.8.c">impersonate another person or representative of the institution and/or community without sufficient rights, including for employees of Habr, and also to use any other forms and methods of illegal representation of other persons on the Internet, and also to enter users or Habr in misconception about the properties and characteristics of any subjects or objects;</li>
+            <li id="3.8.d">upload, send, transmit or otherwise post and/or distribute the Content, in the absence of rights to such actions under the law or any contractual relationship;</li>
+            <li id="3.8.e">upload, send, transmit or otherwise distribute and/or distribute non-authorized advertising information, spam (including search engine), lists of other e-mail addresses, pyramid schemes, multi-level (network) marketing (MLM), the system of Internet earnings and e-mail business, “chain letters”, as well as use the Applications to participate in these events;</li>
+            <li id="3.8.f">collect and store personal data of other persons in the unauthorized manner;</li>
+            <li id="3.8.g">disrupt the normal operation of the Applications;</li>
+            <li id="3.8.h">post links to Internet resources whose content is contrary to the applicable laws of the Russian Federation;</li>
+            <li id="3.8.i">promote actions aimed at violating the restrictions and prohibitions imposed by the Agreement;</li>
+            <li id="3.8.j">otherwise violate legal provisions, including rules and regulations of the international law.</li>
+          </ol>
+        </li>
+        <li id="3.9">If revealing any violation of the rights and/or interests in connection with using the Applications, including the placement of inappropriate Content by another User, you shall notify Habr by sending a written notice with detailed circumstances of the violation and a hypertext link to the Application page containing materials, which violate the relevant rights and/or interests.</li>
+        <li id="3.10">If there are claims filed by third parties against User’s violation of any property and/or personal non-property rights of third parties, as well as the prohibitions or restrictions established by the law, upon Habr’s request such User shall undergo the official identification by providing Habr with a notarized obligation to settle the claims independently and at his/her own expense with the indication of his/her passport data.</li>
+        <li id="3.11">If Habr is brought to justice or imposed with a penalty in connection with the User’s violations of the rights and/or interests of third parties, as well as the prohibitions or restrictions established by the law, such User shall compensate Habr for the losses in full.</li>
+        <li id="3.12">In case of repeated or gross violation of the terms and conditions of this Agreement and/or legal requirements, Habr may block or delete the User's account, prohibit access to certain Applications and/or Services, and delete any information stipulated by the User in the Personal Account or the Content posted by the User, without prior notice.
+        </li>
+      </ol>
+    </li>
+
+    <li>
+      <h2 id="4">Intellectual Rights</h2>
+      <ol>
+        <li id="4.1">All objects accessible through the Application, including design elements, text, graphics, illustrations, video, computer programs, databases, music, sounds and other objects placed within the Applications are the objects of the exclusive rights of Habr, Users and other right-holders.</li>
+        <li id="4.2">Habr shall provide the User with the right to use the Application in a functional manner within its general functional opportunities.</li>
+        <li id="4.3">Use of the Application in other ways, including copying (reproducing) of the design elements, programs for computers and databases included in the Application, as well as their decompilation, modification, and subsequent distribution, public display, of general information, are strictly prohibited, unless otherwise provided by this Agreement.</li>
+        <li id="4.4">The User shall not be entitled to reproduce, repeat and copy, sell, or use for any commercial purposes any parts of the Applications (including the Content available to the User through the Applications), or access to them, unless the User has received such permission from Habr, or when expressly provided for by addendum documents for the use of a separate Service.</li>
+        <li id="4.5">The use of the Application by the User, as well as the Content posted therein, for personal non-commercial use is allowed provided all the signs of protection of copyright, related rights, trademarks, other notifications of authorship, preservation of the name (or pseudonym) of the author/title of the right-holder in unchanged form , keeping the corresponding object unchanged. The exception is cases directly stipulated by the laws of the Russian Federation or addendum documents for the use of a separate Service.</li>
+        <li id="4.6">Applications may contain links to websites on the Internet (third-party websites). These third parties and their content are not checked by Habr for compliance with certain requirements (reliability, completeness, legality, etc.). Habr shall not be held liable for any information, materials posted on third party websites to which the User has access due to use of the Application, as well as the availability of such websites or information and the consequences of their use by the User.</li>
+        <li id="4.7">The link (in any form) to any website, product, service, any information of a commercial or non-commercial nature placed within the scope of the Applications is not an endorsement or recommendation of these products (services, activities) by Habr, except when this is explicitly indicated by Habr.</li>
+        <li>
+          <p id="4.8">By accepting the terms and conditions of this Agreement, the User shall provide Habr with a free (non-exclusive) license for using the Content in the following ways:</p>
+          <ul>
+            <li>to reproduce the Content, i.e. to make one or more copies of the Content in any material form, as well as its recording in the memory of the electronic device (the right to reproduce);</li>
+            <li>to distribute copies of the Content, i.e. to provide access to material reproduced in any material form, including through network and otherwise, as well as by selling, renting, leasing, lending, including importation for any of these purposes (right of distribution);</li>
+            <li>to publicly display the Content (right to public display);</li>
+            <li>to publicly perform the Content (the right to public performance);</li>
+            <li>to posting the Content in such a way that any person can access it online from any place and at any time of his/her choice (right to make publicly available);</li>
+            <li>to modify the Content, i.e. rework or otherwise process the Content, including the translation of the Content from one language to another (right to alter);</li>
+          </ul>
+        </li>
+        <li id="4.9">right to assign all or part of the received rights to third parties (the right to sublicense).</li>
+        <li id="4.10">The aforementioned simple (non-exclusive) license for the use of Content is provided to Habr at the same time as the Content is posted to the Application for the entire duration of the exclusive rights to copyright and/or related rights that constitute such Content for use on the territory of all countries of the world.</li>
+        <li id="4.11">The User guarantees the right to use the Content under the terms and conditions of the aforementioned license to the extend required.</li>
+      </ol>
+    </li>
+
+    <li>
+      <h2 id="5">Notices</h2>
+      <ol>
+        <li id="5.1">Habr is entitled to send informational e-mails (hereinafter referred to as “Notifications”) about important events occurring within the Application or related to it to the User via the e-mails  stipulated in his/her Personal Account.</li>
+        <li id="5.2">In addition, it is allowed to use Notifications to inform the User about restrictions on access to the Application and/or the Services in case of preventive maintenance, the User’s violations, changes in the functionality of the Application, the scope or terms of providing the Service, including amendment of the Agreement, mandatory and addendum documents.</li>
+        <li id="5.3">Habr is entitled at its own discretion to use Notifications for the distribution of advertising of its own services and products (services) of third parties.</li>
+      </ol>
+    </li>
+
+    <li>
+      <h2 id="6">Electronic Signature Use Agreement</h2>
+      <ol>
+        <li id="6.1">In the relationship between Habr and the User, electronic documents certified by a basic e-signature can be used.</li>
+        <li id="6.2">A basic e-signature is an electronic signature that, through the use of the User’s login and password or the e-mail address of the User stipulated in the Personal Account (electronic signature key), confirms the fact that the electronic signature is generated directly by the User.</li>
+        <li id="6.3">As agreed by the Parties electronic documents signed by a basic e-signature shall be recognized as equivalent to documents on paper signed with a wet signature.</li>
+        <li id="6.4">Habr identifies the User, to whom a basic e-signature corresponds, according to the User’s login and password stipulated during registration/authorization in the Application - in case of any actions to use the Services or according to the email address applied by the User - in case of Habr received any messages from this address.</li>
+        <li id="6.5">Any actions taken using a basic e-signature of a certain User shall be deemed committed by such User.</li>
+        <li id="6.6">The User’s order for providing an access to the Services via software functionality in his/her Personal Account or by sending a Habr e-mail from the address stipulated in the Personal Account equals the signing of such electronic document with the User’s basic e-signature and confirms his/her intention to conclude agreement on terms stipulated in the relevant addendum documents for the use of such Service.</li>
+        <li id="6.7">The User shall be obliged to keep confidentiality of the electronic signature key. In particular, the User is not entitled to transfer his/her login and password or provide access to his/her e-mail to third parties, and the User shall be fully liable for their safety and personal use, independently choosing the way they are stored and limiting access to them.</li>
+        <li id="6.8">In case of unauthorized access to the login and password, their loss or disclosure to third parties, the User is obliged to immediately notify Habr about this by sending an e-mail from the e-mail address stipulated in his/her Personal Account.</li>
+        <li id="6.9">In case of loss or unauthorized access to the e-mail address stipulated in the Personal Account, the User shall be obliged to immediately change such address in the Personal Account with a new one and report this fact to Habr by sending an e-mail from a new e-mail address.</li>
+      </ol>
+    </li>
+
+    <li>
+      <h2 id="7">Final Provisions</h2>
+      <ol>
+        <li id="7.1">This Agreement shall be governed and interpreted in accordance with the laws of the Russian Federation. Issues not regulated by this Agreement shall be resolved in accordance with the laws of the Russian Federation. All possible disputes arising from the relations governed by this Agreement shall be resolved in accordance with the procedure established by the applicable laws of the Russian Federation, according to the rules of Russian legislation. Throughout the text of this Agreement, unless expressly stated otherwise, the term “laws” shall refer to the laws of the Russian Federation.</li>
+        <li id="7.2">If by any reason one or several provisions hereof become invalid or unenforceable, this does not affect the validity or applicability of the remaining provisions hereof.</li>
+        <li id="7.3">Habr’s inaction in case of violation by the User or other Users of the provisions hereof does not deprive Habr of the right to take appropriate actions in defense of its interests later, nor does it mean that Habr refuses from its rights in case of subsequent same or similar violations.</li>
+        <li id="7.4">All disputes hereunder or in connection therewith shall be subject to consideration, depending on subject-matter jurisdiction, either by the Commercial court of Moscow city or by Basmanniy District Court of Moscow city in accordance with the current procedural law of the Russian Federation.</li>
+        <li id="7.5">This Agreement is provided to the User for acknowledge in English. In the event of a divergence of the Russian version hereof and the version hereof in English, the provisions of the Russian version hereof shall apply.</li>
+      </ol>
+    </li>
+
+    <li>
+      <h2 id="8">Habr Company Details:</h2>
+      <p>
+        Habr Blockchain Publishing LTD<br/>
+        Registration Number: НЕ 289873<br/>
+        Address: Diagorou 4, KERMIA BUILDING, 6th floor, flat / office 601, 1097, Nicosia, Cyprus<br/>
+        E-mail: <a href="mailto:support@habr.com">support@habr.com</a>
+      </p>
+    </li>
+  </ol>
+</div>
+
+<p><a href="/info/agreement_20200207/">The wording of the Agreement dated February 7, 2020</a></p>
+</div>
+    </div>
+    <div class="layout__footer">
+  <div class="layout__footer-inner">
+    <div class="footer-links">
+        <a href="https://account.habr.com/info/agreement/?hl=ru_RU&consumer=default" class="footer-links__link">
+          <svg class="footer-links__icon footer-links__icon-ball" width="16" height="16">
+            <use xlink:href="/img/icons-sprite.svg#globus"/>
+          </svg>
+          Русский
+        </a>
+      <a href="https://account.habr.com/info/about/?consumer=default" class="footer-links__link">About</a>
+      <a href="https://habr.com/company/habr/blog/" class="footer-links__link">Blog</a>
+      <a href="https://account.habr.com/feedback/?consumer=default" class="footer-links__link">Feedback</a>
+      <a href="https://account.habr.com/info/agreement/?consumer=default" class="footer-links__link">User agreement</a>
+      <a href="https://account.habr.com/info/confidential/?consumer=default" class="footer-links__link">Privacy policy</a>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+    </div>
+
+      <script src="/js/1709212106/raven.min.js"></script>
+      <script>Raven.config('https://a50395132210441f86e84f713231e270@sentry.srv.habr.com/10').install()</script>
+
+    <script src="/js/1709212106/jquery-3.4.1.min.js"></script>
+    <script src="/js/1709212106/jquery.form.min.js"></script>
+    <script src="/js/1709212106/jquery.scrollTo.js"></script>
+    <script src="/js/1709212106/jquery.jgrowl.js"></script>
+    <script src="/js/1709212106/jquery.cookie.js"></script>
+    <script src="/js/1709212106/chosen.jquery.js"></script>
+    <script src="/js/1709212106/form.validator.js"></script>
+    <script src="/js/1709212106/main.js"></script>
+    
+
+    <script>
+      var g_hl = 'en';
+    </script>
+
+      <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  //ga('create', 'UA-726094-15', 'auto');
+  ga('create', 'UA-726094-15', {
+    'cookieDomain': 'none'
+  });
+
+  ga('create', 'UA-726094-24', 'auto', { 'name': 'HGM', 'allowLinker': true });
+  ga('HGM.require', 'linker');
+  ga('HGM.linker:autoLink', ['toster.ru', 'habr.com', 'account.habr.com', 'm.habr.com']);
+
+  ga('send', 'pageview');
+  ga('HGM.send', 'pageview');
+</script>
+
+
+    
+  </body>
+</html>
