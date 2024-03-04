@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+  <meta name="yandex-verification" content="3c6e1d4984cbafae">
+  <meta name="google-site-verification" content="F89rXTMXRgew2SWiZ7CaN9ruT76FMNnaypsfFoU1fGA">
+  <meta name="google-site-verification" content="muTMJ-pbpCyrKdDnWIfyxmHg1-yf_3KstSCV6W1E2VU">
+  <link rel="icon" href="https://selectel.ru/blog/wp-content/themes/selectel-academy/img/favicon.png">
+  <script type="text/javascript" src="https://hog.selectel.ru/static/recorder.js?v=1.29.0"></script>
+  <script>
+    var APP_WP_BASE = 'https://selectel.ru/blog'
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+
+    gtag('consent', 'default', {
+      'analytics_storage': 'granted',
+      'ad_storage': 'granted',
+      'wait_for_update': 500
+    });
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KHBTWL7');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Yandex.Metrika counters -->
+  <script type="text/javascript" >
+    function getCookie(name) {
+      var matches = document.cookie.match(new RegExp(
+        "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+      ));
+      return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+    var google_client_id = getCookie('_ga') ? getCookie('_ga').slice(6) : '';
+
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(45571980, "init", {
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true
+    });
+
+    ym(40029655, "init", {
+      childIframe:true,
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      trackHash:true,
+      triggerEvent: true,
+      userParams:{
+        "GoogleClientID": google_client_id,
+      }
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/45571980" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counters -->
+
+  <!-- Mindbox tracker -->
+  <script>
+    mindbox = window.mindbox || function() { mindbox.queue.push(arguments); };
+    mindbox.queue = mindbox.queue || [];
+    mindbox('create', {
+      endpointId: 'SelectelWebsite'
+    });
+
+    mindbox('async', {
+      operation: 'Tracker.TrackPage',
+      data: {
+        pointOfContact: document.location.pathname
+      },
+      onError: function(error) {
+        console.error(error)
+      }
+    });
+  </script>
+  <script src="https://api.mindbox.ru/scripts/v1/tracker.js" async></script>
+  <!-- /Mindbox tracker -->
+
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link rel="canonical" href="https://selectel.ru/blog/openstack_vmw/">
+	<title>OpenStack vs VMware: что лучше — open source или closed source</title>
+	<meta name="description" content="Чем отличается облачная платформа на OpenStack от облака на базе VMware? Собрали экспертов и подискутировали на тему того, что лучше." />
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="OpenStack vs VMware: что лучше — open source или closed source" />
+	<meta property="og:description" content="Чем отличается облачная платформа на OpenStack от облака на базе VMware? Собрали экспертов и подискутировали на тему того, что лучше." />
+	<meta property="og:url" content="https://selectel.ru/blog/openstack_vmw/" />
+	<meta property="og:site_name" content="Академия Selectel" />
+	<meta property="article:published_time" content="2023-05-22T07:47:56+00:00" />
+	<meta property="article:modified_time" content="2023-06-21T16:31:37+00:00" />
+	<meta property="og:image" content="https://selectel.ru/blog/wp-content/uploads/2023/05/MD-744.jpeg" />
+	<meta property="og:image:width" content="2040" />
+	<meta property="og:image:height" content="674" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Владислав Ефименко" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Написано автором" />
+	<meta name="twitter:data1" content="Владислав Ефименко" />
+	<meta name="twitter:label2" content="Примерное время для чтения" />
+	<meta name="twitter:data2" content="8 минут" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://selectel.ru/blog/openstack_vmw/","url":"https://selectel.ru/blog/openstack_vmw/","name":"OpenStack vs VMware: что лучше — open source или closed source","isPartOf":{"@id":"https://selectel.ru/blog/#website"},"primaryImageOfPage":{"@id":"https://selectel.ru/blog/openstack_vmw/#primaryimage"},"image":{"@id":"https://selectel.ru/blog/openstack_vmw/#primaryimage"},"thumbnailUrl":"https://selectel.ru/blog/wp-content/uploads/2023/05/MD-744.jpeg","datePublished":"2023-05-22T07:47:56+00:00","dateModified":"2023-06-21T16:31:37+00:00","author":{"@id":"https://selectel.ru/blog/#/schema/person/17ed312da826686e72153ecaf3d4d49f"},"description":"Чем отличается облачная платформа на OpenStack от облака на базе VMware? Собрали экспертов и подискутировали на тему того, что лучше.","breadcrumb":{"@id":"https://selectel.ru/blog/openstack_vmw/#breadcrumb"},"inLanguage":"ru-RU","potentialAction":[{"@type":"ReadAction","target":["https://selectel.ru/blog/openstack_vmw/"]}]},{"@type":"ImageObject","inLanguage":"ru-RU","@id":"https://selectel.ru/blog/openstack_vmw/#primaryimage","url":"https://selectel.ru/blog/wp-content/uploads/2023/05/MD-744.jpeg","contentUrl":"https://selectel.ru/blog/wp-content/uploads/2023/05/MD-744.jpeg","width":2040,"height":674},{"@type":"BreadcrumbList","@id":"https://selectel.ru/blog/openstack_vmw/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная страница","item":"https://selectel.ru/blog/"},{"@type":"ListItem","position":2,"name":"OpenStack vs VMware: что лучше — open source или проприетарная платформа"}]},{"@type":"WebSite","@id":"https://selectel.ru/blog/#website","url":"https://selectel.ru/blog/","name":"Академия Selectel","description":"Образовательные статьи и инструкции, бесплатные курсы и лучшие практики от ведущего провайдера IT-инфраструктуры.","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://selectel.ru/blog/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"ru-RU"},{"@type":"Person","@id":"https://selectel.ru/blog/#/schema/person/17ed312da826686e72153ecaf3d4d49f","name":"Владислав Ефименко","image":{"@type":"ImageObject","inLanguage":"ru-RU","@id":"https://selectel.ru/blog/#/schema/person/image/","url":"https://selectel.ru/blog/wp-content/uploads/2023/05/Ефименко-96x96.jpeg","contentUrl":"https://selectel.ru/blog/wp-content/uploads/2023/05/Ефименко-96x96.jpeg","caption":"Владислав Ефименко"},"sameAs":["https://selectel.ru/"],"url":"https://selectel.ru/blog/author/efimenkov/"}]}</script>
+
+
+<link rel='stylesheet' id='wp-block-library-css' href='https://selectel.ru/blog/wp-includes/css/dist/block-library/style.min.css?ver=6.2.4' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://selectel.ru/blog/wp-includes/css/classic-themes.min.css?ver=6.2.4' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='style-css' href='https://selectel.ru/blog/wp-content/themes/selectel-academy/dist/css/app.css?ver=1.0.2' media='all' />
+<link rel="canonical" href="https://selectel.ru/blog/openstack_vmw/">
+  <script>
+    !function (t, e) {
+      var o, n, p, r;
+      e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) {
+        function g(t, e) {
+          var o = e.split(".");
+          2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () {
+            t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+          }
+        }
+
+        (p = t.createElement("script")).type = "text/javascript", p.async = !0, p.src = s.api_host + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r);
+        var u = e;
+        for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) {
+          var e = "posthog";
+          return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e
+        }, u.people.toString = function () {
+          return u.toString(1) + ".people (stub)"
+        }, o = "capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "), n = 0; n < o.length; n++) g(u, o[n]);
+        e._i.push([i, s, a])
+      }, e.__SV = 1)
+    }(document, window.posthog || []);
+    posthog.init('phc_eBTTWO99HQkIfVXSqLlObOcmLhUxPRPbB3n1LKiL1iY', {
+      api_host: 'https://hog.selectel.ru',
+      autocapture: false
+    })
+  </script>
+</head>
+<body class="main-body">
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHBTWL7"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="header">
+  <div class="header_body">
+    <div class="header-left">
+      <button class="burger" type="button">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="#092433" xmlns="http://www.w3.org/2000/svg"><path d="M15.32 7.507H.425v1.241h14.893v-1.24Zm0 4.965H.425v1.242h14.893v-1.242Zm0-9.929H.425v1.241h14.893V2.543Z" fill="inherit"/></svg>      </button>
+      <a class="header-logo" href="https://selectel.ru/blog/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 681 91" xml:space="preserve"><path fill="#092433" d="M177.5 40.8c-1.2-2.4-2.9-4.1-5.3-5.1-2.4-1.1-5.2-1.6-8.5-1.6-4.1 0-7.5.9-10 2.7-2.5 1.8-4.3 4.2-5.2 7.4l7.3 2.3c.6-1.7 1.6-3 3-3.8 1.5-.8 3.1-1.3 4.9-1.3 2.7 0 4.6.6 5.7 1.7 1 1 1.5 2.4 1.6 4.3h-.4c-3.8.6-6.9 1.1-9.2 1.5-2.4.4-4.3.9-6 1.5-2.8.9-4.9 2.3-6.2 4.1-1.3 1.8-2 4-2 6.7 0 2 .5 3.9 1.4 5.5.9 1.6 2.3 2.9 4.1 3.9 1.8 1 4 1.5 6.5 1.5 3.2 0 5.9-.6 8.1-1.8 1.7-.9 3.2-2.3 4.6-4.1V71h7V49c0-1.9-.1-3.4-.3-4.7-.3-1.2-.6-2.4-1.1-3.5zM170 59.6c-.5 1.6-1.5 3-3.1 4.2-1.6 1.2-3.6 1.8-6.1 1.8-1.8 0-3.2-.4-4.3-1.2-1-.8-1.5-2-1.5-3.3 0-1.2.4-2.1 1.1-2.9.8-.8 1.8-1.4 3.3-1.9 1.2-.4 2.6-.7 4.2-1 1.6-.4 3.9-.8 6.9-1.2.1 0 .3 0 .4-.1 0 .9-.1 1.7-.2 2.5-.1 1.2-.3 2.2-.7 3.1zM80.4 23.1 65.3 71h8.3l3.3-10.4h18.9L99.1 71h8.3L92.2 23.1H80.4zm-1.2 30 7-22.4 7.1 22.4H79.2zm51.4-.1 15.2 18h-10.6l-13.8-17.3V71h-8.2l.1-35.9h8.1v17.3l13.1-17.3h10L130.6 53zm211-17.9h6.4V71h-7.7V47.5l-17 23.5h-6.5V35.1h7.7V58l17.1-22.9zm-122.3 0h-26.8c-.2 4.7-.4 8.6-.7 11.8-.3 3.2-.6 6.2-1 8.9-.3 2.3-.7 4-1.2 5.3-.4 1.2-1.1 2.2-1.9 2.7-.8.6-1.8.9-3.1.9V79h7.6v-8h23v8h7.5V64.7h-3.6V35.1zm-8 29.6h-15.8c.8-.8 1.4-1.8 1.7-3 .4-1.2.7-2.7 1-4.7.3-2.2.6-4.6.7-7.3.2-2.7.4-5.5.6-8.5h11.7v23.5zM386.9 71l-.1-35.9h-14.5c-2.9 0-5.2.2-6.7.5-2.8.6-5.1 1.9-6.8 3.9-1.7 2-2.5 4.6-2.5 7.7 0 3.2.9 5.8 2.6 7.8 1.3 1.4 2.8 2.4 4.6 3.1l-8.1 13h8.5l7.4-12h7.7v12h7.9zm-15.3-18.2c-1.2 0-2.2-.1-3.1-.4-1.1-.3-2.1-.9-2.9-1.9-.8-1-1.1-2.1-1.1-3.5 0-1.3.4-2.4 1.1-3.4.8-1 1.7-1.6 2.7-1.9.9-.3 2-.4 3.3-.4h7.3v11.4h-7.3zM254.9 36.7c-2.6-1.7-5.7-2.6-9.4-2.6-3.5 0-6.7.8-9.4 2.4-2.7 1.6-4.8 3.8-6.3 6.8-1.5 2.9-2.2 6.3-2.2 10.2 0 3.6.8 6.8 2.3 9.6 1.6 2.8 3.7 5 6.5 6.6 2.8 1.6 6 2.3 9.6 2.3 3.5 0 6.7-.9 9.6-2.7 2.9-1.8 5-4.3 6.3-7.5l-7.9-2.4c-.8 1.7-1.9 3-3.3 3.9-1.4.8-3.1 1.3-5.1 1.3-3.1 0-5.4-1-7.1-2.9-1.3-1.6-2-3.7-2.3-6.3h26c.3-4.3-.2-8.1-1.5-11.2-1.2-3.3-3.1-5.8-5.8-7.5zm-9 4.4c2.9 0 5 .9 6.3 2.7 1 1.3 1.6 3.1 1.9 5.5h-17.7c.4-2.1 1.1-3.8 2.1-5.1 1.6-2.1 4.1-3.1 7.4-3.1zm55-6h6.6V71h-7.7V51.2L289.6 71h-3.1l-10.2-19.8V71h-7.7V35.1h6.6l12.9 24.8 12.8-24.8zm152.1 16c.9 1.6 1.3 3.5 1.3 5.9 0 2.5-.5 4.7-1.6 6.6-1 1.9-2.4 3.4-4.2 4.7-1.8 1.2-3.8 2.2-6 2.8-2.2.6-4.6.9-7.1.9-3.5 0-6.7-.6-9.5-1.8-2.8-1.2-5.1-3-6.9-5.2-1.8-2.3-2.9-5-3.4-8.1l8.3-1.3c.7 2.8 2.2 5 4.4 6.6 2.2 1.6 4.8 2.3 7.7 2.3 1.7 0 3.3-.3 4.8-.8s2.7-1.3 3.7-2.3c1-1 1.4-2.3 1.4-3.8 0-.7-.1-1.3-.3-1.8-.2-.6-.6-1.1-1-1.5-.4-.4-1-.8-1.7-1.2-.7-.4-1.4-.7-2.3-1l-12.4-3.7c-1.1-.3-2.2-.7-3.5-1.2-1.2-.5-2.4-1.3-3.5-2.2-1.1-.9-2-2.1-2.7-3.5-.7-1.4-1-3.2-1-5.3 0-3.1.8-5.7 2.3-7.8 1.6-2.1 3.7-3.7 6.3-4.7 2.7-1 5.6-1.6 8.8-1.5 3.3 0 6.2.6 8.8 1.7 2.6 1.1 4.7 2.7 6.5 4.8 1.7 2.1 3 4.6 3.7 7.6l-8.6 1.5c-.4-1.7-1-3.1-2.1-4.3-1-1.2-2.2-2.1-3.7-2.7-1.4-.6-3-1-4.6-1-1.6 0-3.1.2-4.5.7-1.4.5-2.5 1.2-3.3 2.1-.8.9-1.2 2-1.2 3.3 0 1.2.4 2.1 1.1 2.9.7.7 1.6 1.3 2.6 1.8 1.1.4 2.1.8 3.2 1.1l8.6 2.4c1.2.3 2.5.7 4 1.3 1.5.5 2.9 1.3 4.2 2.2 1.5.7 2.6 2 3.4 3.5zm49.3-29h8V71h-8V22.1zm-15.4 14.6c-2.6-1.8-5.8-2.6-9.5-2.6-3.5 0-6.6.8-9.3 2.4-2.7 1.6-4.8 3.8-6.3 6.8-1.5 2.9-2.3 6.3-2.3 10.2 0 3.6.8 6.9 2.3 9.6 1.6 2.8 3.7 5 6.5 6.6 2.8 1.6 5.9 2.4 9.6 2.4 3.5 0 6.6-.9 9.5-2.7 2.9-1.8 5-4.3 6.4-7.6l-7.9-2.4c-.8 1.7-1.9 2.9-3.3 3.8-1.4.9-3.1 1.3-5.1 1.3-3.1 0-5.4-1-7-3-1.3-1.6-2-3.6-2.3-6.2h25.9c.3-4.3-.2-8-1.4-11.2-1.2-3.2-3.2-5.7-5.8-7.4zm-9.1 4.4c2.9 0 5 .9 6.4 2.7 1 1.3 1.6 3.1 1.9 5.4h-17.7c.4-2.1 1.1-3.8 2.1-5.1 1.5-2 4-3 7.3-3zm196.4-19V71h-8V22.1h8zm-23.3 14.6c-2.6-1.8-5.8-2.6-9.5-2.6-3.5 0-6.6.8-9.3 2.4-2.7 1.6-4.8 3.8-6.3 6.8-1.5 2.9-2.3 6.3-2.3 10.2 0 3.6.8 6.9 2.3 9.6 1.6 2.8 3.7 5 6.5 6.6 2.8 1.6 5.9 2.4 9.6 2.4 3.5 0 6.6-.9 9.5-2.7 2.9-1.8 5-4.3 6.4-7.6l-7.9-2.4c-.8 1.7-1.9 2.9-3.3 3.8-1.4.9-3.1 1.3-5.1 1.3-3.1 0-5.4-1-7-3-1.3-1.6-2-3.6-2.3-6.2h25.9c.3-4.3-.2-8-1.4-11.2-1.3-3.2-3.2-5.7-5.8-7.4zm-9.2 4.4c2.9 0 5 .9 6.4 2.7 1 1.3 1.6 3.1 1.9 5.4h-17.7c.4-2.1 1.1-3.8 2.1-5.1 1.6-2 4-3 7.3-3zm-32.6-6h10.5v6.3h-10.5v18.3c0 1.1.3 2 .7 2.7.8 1.3 2.1 2.1 3.8 2.2 1.8.2 3.7.1 6-.3V71c-2.4.4-4.7.6-7 .6s-4.3-.5-6.1-1.2c-1.8-.8-3.2-2.1-4.1-3.8-.8-1.6-1.3-3.1-1.3-4.8 0-1.6-.1-3.4-.1-5.5v-15h-6.5V35h6.5V25h8v10.1zm-41.4 12c-.6 1.7-1 3.7-1 5.9 0 3.4.8 6.2 2.3 8.3 1.5 2.1 3.8 3.2 6.8 3.2 2.1 0 3.8-.5 5-1.5 1.2-1 2.2-2.4 2.8-4.2l8.2 1.8c-1.1 3.7-3.1 6.5-5.8 8.5-2.8 2-6.2 2.9-10.2 2.9-3.7 0-6.9-.8-9.5-2.5-2.6-1.7-4.6-3.9-6-6.8-1.4-2.9-2.1-6.1-2.1-9.7 0-3.7.7-6.9 2.2-9.8 1.4-2.9 3.5-5.1 6.1-6.7 2.6-1.6 5.8-2.5 9.4-2.5 4.1 0 7.5 1 10.3 3.1 2.8 2 4.7 4.8 5.6 8.4l-8 2.2c-.6-1.9-1.7-3.4-3.1-4.5-1.4-1.1-3.1-1.6-4.9-1.6-2.1 0-3.8.5-5.2 1.5-1.2 1-2.2 2.3-2.9 4zm-22.1-10.4c-2.6-1.8-5.8-2.6-9.5-2.6-3.5 0-6.6.8-9.3 2.4s-4.8 3.8-6.3 6.8c-1.5 2.9-2.3 6.3-2.3 10.2 0 3.6.8 6.9 2.3 9.6 1.6 2.8 3.7 5 6.5 6.6 2.8 1.6 5.9 2.4 9.6 2.4 3.5 0 6.6-.9 9.5-2.7 2.9-1.8 5-4.3 6.4-7.6l-7.9-2.4c-.8 1.7-1.9 2.9-3.3 3.8-1.4.9-3.1 1.3-5.1 1.3-3.1 0-5.4-1-7-3-1.3-1.6-2-3.6-2.3-6.2h25.9c.3-4.3-.2-8-1.4-11.2-1.3-3.2-3.2-5.7-5.8-7.4zm-9.2 4.4c2.9 0 5 .9 6.4 2.7 1 1.3 1.6 3.1 1.9 5.4H527c.4-2.1 1.1-3.8 2.1-5.1 1.6-2 4.1-3 7.3-3z"/><path fill="#EB4247" fill-rule="evenodd" clip-rule="evenodd" d="M36 15H0v4h12v4H8c-4.4 0-8 3.6-8 8v14c0 1.1.9 2 2 2h10v4H6c-1.1 0-2 .9-2 2v6h4v-4h4v8c0 2.2 1.8 4 4 4v4h4v-4h4v4h4v-4h2.6c1.9 0 3.6-.7 4.9-2.1l11.1-11.1c2.5-2.5.7-6.8-2.8-6.8H32V31c0-4.4-3.6-8-8-8v-4h4v4h4v-4h4v-4zM24 31h-4v4h4v-4z"/></svg></a>
+      <nav>
+        <ul class="header_nav-list">
+          <li
+            class="header_nav-list-item  ">
+            <a class="header_nav-list-link" href="https://selectel.ru/blog/all/">Блог</a>
+          </li>
+
+          <li class="header_nav-list-item  __active">
+            <a class="header_nav-list-link" href="https://selectel.ru/blog/courses/">Курсы</a>
+          </li>
+          <li class="header_nav-list-item  ">
+            <a class="header_nav-list-link" href="https://selectel.ru/blog/events/">Мероприятия</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-right">
+      <button class="header_subscribe js-subscribe-button">
+        <svg width="14" height="11" viewBox="0 0 14 11" fill="#092433" xmlns="http://www.w3.org/2000/svg"><path d="M11.666.208H2.334A2.334 2.334 0 0 0 0 2.542v6.125A2.334 2.334 0 0 0 2.334 11h9.332A2.334 2.334 0 0 0 14 8.667V2.542A2.334 2.334 0 0 0 11.666.208Zm1.168 9.042a.586.586 0 0 1-.584.584H1.75a.586.586 0 0 1-.584-.584V2.542L5.1 5.854c.94.792 2.303.825 3.281.08l4.453-3.392V9.25Zm0-8.168-5.382 4.1a1.167 1.167 0 0 1-1.459-.035L1.166 1.082v.876a.586.586 0 0 1 .584-.584h10.5a.585.585 0 0 1 .584.584v-.876Z" fill="inherit"/></svg>        Подписаться
+      </button
+      >
+      <a
+        class="button button_small button_right-img header_button"
+        target="_blank"
+        rel="noreferrer noopener"
+        href="https://my.selectel.ru/login"
+      >
+        В панель
+        <svg width="9" height="9" viewBox="0 0 9 9" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M.966.465v.88l5.52.001c.15 0 .224.187.112.3L.407 7.837l.617.618 6.192-6.192c.112-.112.299-.037.299.131l.002 5.502h.88s-.003-6.418.006-6.558a.863.863 0 0 0-.87-.87L.966.464Z" fill="inherit"/></svg>      </a>
+      <button type="button" class="header_search">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="#092433" xmlns="http://www.w3.org/2000/svg"><path d="M6.003 0A6 6 0 0 1 11.4 3.402a6.007 6.007 0 0 1-.714 6.342L16 15.057l-.943.943-5.306-5.315A5.999 5.999 0 0 1 .058 5.166 6.004 6.004 0 0 1 6.003 0Zm0 10.685a4.681 4.681 0 0 0 4.328-2.891 4.687 4.687 0 0 0-3.413-6.39A4.681 4.681 0 0 0 1.32 6.002a4.69 4.69 0 0 0 4.682 4.683Z" fill="inherit"/></svg>      </button>
+    </div>
+  </div>
+
+  <div class="menu-mobile">
+    <div class="menu-mobile_overlay"></div>
+
+    <div class="wrapper">
+      <div class="menu-mobile_inner">
+        <button class="menu-mobile_close-btn"></button>
+        <div class="menu-mobile_header">
+          <nav class="menu-mobile_nav">
+            <ul class="menu-mobile_list">
+              <li
+                class="menu-mobile_list-item ">
+                <a href="https://selectel.ru/blog/all/">Блог</a>
+              </li>
+
+              <li class="menu-mobile_list-item __active">
+                <a href="https://selectel.ru/blog/courses/">Курсы</a>
+              </li>
+              <li class="menu-mobile_list-item ">
+                <a href="https://selectel.ru/blog/events/">Мероприятия</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="menu-mobile_body">
+          <div class="menu-mobile_content">
+            
+<nav class="article-sidebar">
+      <ul class="article-sidebar__wrapper info-page_sidebar-block">
+      <li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="#open-source">
+            <div class="article-sidebar_number">1</div>
+      <p class="article-sidebar_text f-18">В чем ключевая разница между платформами?</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="#development">
+            <div class="article-sidebar_number">2</div>
+      <p class="article-sidebar_text f-18">В мире разработки: компоненты и возможности решений</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="#client">
+            <div class="article-sidebar_number">3</div>
+      <p class="article-sidebar_text f-18">В мире клиента: какой продукт на выходе?</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="#final">
+            <div class="article-sidebar_number">4</div>
+      <p class="article-sidebar_text f-18">Заключение</p>
+          </a></li>    </ul>
+
+        <p class="article-course_progress">Сейчас вы на 1 статье <a
+        href="https://selectel.ru/blog/courses/getting-started-with-vmware/">курса</a></p>
+
+    <ul class="article-course_info">
+              <li class="article-course_info-item __active">
+          <div class="article-course_number-block">
+            <span>01</span>
+                        <span class="article-course_time">13 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/openstack_vmw/"
+             class="article-course_course-name">OpenStack vs VMware: что лучше — open source или проприетарная платформа</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>02</span>
+                        <span class="article-course_time">17 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/hypervisor-esxi/"
+             class="article-course_course-name">Гипервизор VMware ESXi: функции и отличия от ESX</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>03</span>
+                        <span class="article-course_time">9 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/vmware-nsx-t/"
+             class="article-course_course-name">VMware NSX-T: что такое и как работает</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>04</span>
+                        <span class="article-course_time">9 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/vsan-v-oblake-na-baze-vmware/"
+             class="article-course_course-name">vSAN в облаке на базе VMware</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>05</span>
+                        <span class="article-course_time">7 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/vybor-oblaka/"
+             class="article-course_course-name">Гайд по выбору облака для бизнеса: частное, публичное или гибридное?</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>06</span>
+                        <span class="article-course_time">7 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/vmware-horizon/"
+             class="article-course_course-name">Обзор VMware Horizon – платформы для организации и управления виртуальными рабочими столами</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>07</span>
+                        <span class="article-course_time">6 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/veeam-services/"
+             class="article-course_course-name">Инструменты Veeam для резервного копирования — в чем разница?</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>08</span>
+                        <span class="article-course_time">11 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/draas/"
+             class="article-course_course-name">Disaster Recovery в облако: кому нужно и как его обеспечить</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>09</span>
+                        <span class="article-course_time">5 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/tutorials/vmware-public-cloud/"
+             class="article-course_course-name">Знакомство с публичным облаком на базе VMware в Selectel</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>10</span>
+                        <span class="article-course_time">6 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/tutorials/how-to-get-started-with-public-cloud-vmware/"
+             class="article-course_course-name">Как начать работу с публичным облаком на базе VMware в Selectel</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>11</span>
+                        <span class="article-course_time">13 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/tutorials/install-vmware-tools-on-windows-and-linux/"
+             class="article-course_course-name">Установка VMware Tools на&nbsp;Windows и&nbsp;Linux: пошаговая инструкция</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>12</span>
+                        <span class="article-course_time">20 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/tutorials/installing-windows11-on-vmware/"
+             class="article-course_course-name">Установка Windows 11 на VMware: подробная инструкция</a>
+        </li>
+          </ul>
+
+          <button class="button article-course_btn button_next" type="button">
+        <span>         <svg width="9" height="16" viewBox="0 0 9 16" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="m1.332 0 6.67 6.675a1.879 1.879 0 0 1 0 2.66L1.337 16l-.943-.941L7.26 8.195a.266.266 0 0 0 0-.377L.39.949 1.332 0Z" fill="inherit"/></svg></span> Полный список курса
+        (12)
+      </button>
+        
+</nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="search-modal" id="search-modal"></div>
+
+  <div class="modal-subscribe">
+    <div class="modal-subscribe_content-block">
+      <div class="modal-subscribe_close"></div>
+      
+        <form class="form form--subscribe js-form-subscribe" data-form=""
+            novalidate>
+      <!--      data-endpoint="--><!--" TODO Вкорячить эндпоинт-->
+
+      <div class="form_text-block">
+        <h2 class="form_title">
+          Подпишитесь на email-рассылку           <br/>
+          <span>Отправляем полезные письма каждый месяц.</span>
+        </h2>
+      </div>
+      <div class="form_right-block">
+        <div class="form_input-block">
+          <div class="form_error-text js-input-error-email"></div>
+          <input class="form_input-email" type="email" name="email" minlength="5" maxlength="255"
+                 placeholder="Email" required>
+          <button class="form_btn-submit round-btn round-btn_dark" type="submit">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path
+                d="M11.207 1.37484e-06L9.96476 1.18388L17.7621 8.61461C17.9736 8.81612 17.815 9.16877 17.4978 9.16877L-4.35546e-07 9.16877L-3.68695e-07 10.8312L17.4978 10.8312C17.815 10.8312 17.9736 11.1839 17.7357 11.4106L9.96476 18.8161L11.207 20C11.207 20 20.2731 11.3602 20.4846 11.1839C21.1718 10.529 21.1718 9.49622 20.4846 8.84131C20.2731 8.6398 11.207 1.37484e-06 11.207 1.37484e-06Z"
+                fill=""></path>
+            </svg>
+          </button>
+        </div>
+        <div class="checkbox__error js-input-error-subscription" style="margin-left: 4.1rem"></div>
+        <div class="form_confirm-block">
+          <div class="form_confirm-input">
+            <input class="form_confirm-input-checkbox" required type="checkbox"
+                   name="subscription">
+            <div class="form_confirm-checkbox"></div>
+          </div>
+          <label for="emailRequest" class="f-14"><a href="https://files.selectel.ru/docs/ru/consent-to-personal-data-processing.pdf" target="_blank" rel="noreferrer noopener">Соглашаюсь</a> на получение новостной рассылки <br>в
+            соответствии с <a href="https://files.selectel.ru/docs/ru/personal-data-processing-and-protection-policy.pdf" target="_blank" rel="noreferrer noopener">Политикой</a></label>
+        </div>
+        <div class="form_success-text f-24" style="display: none">
+          Спасибо! Осталось подтвердить подписку. Проверьте почту, мы&nbsp;уже отправили вам письмо.
+        </div>
+
+        <div class="form_all-error-text f-24" style="display: none">
+          Ошибка отправки <br>Перезагрузите страницу и отправьте форму еще раз.
+        </div>
+      </div>
+      </form>
+      
+
+    </div>
+  </div>
+</header>
+<main class="main">
+
+  <section class="wrapper article">
+    <div class="modal-img">
+      <div class="modal-img_content-block">
+        <div class="modal-img_close"></div>
+        <img class="modal-img_img" src="./" alt="описание картинки">
+        <p class="modal-img_img-name f-14"></p>
+      </div>
+    </div>
+    <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Selectel">
+      <div itemprop="logo" itemtype="http://schema.org/ImageObject" itemscope>
+        <meta itemprop="url" content="https://selectel.ru/blog/wp-content/themes/selectel-academy/dist/icons/header/main-logo.svg">
+        <meta itemprop="width" content="134">
+        <meta itemprop="height" content="27">
+      </div>
+    </div>
+    <meta content="2023-05-22T10:47:56+03:00" itemprop="datePublished">
+    <meta content="2023-06-21T19:31:37+03:00" itemprop="dateModified">
+
+    <div class="info-page_wrapper">
+      
+<nav class="article-sidebar">
+      <ul class="article-sidebar__wrapper info-page_sidebar-block">
+      <li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="#open-source">
+            <div class="article-sidebar_number">1</div>
+      <p class="article-sidebar_text f-18">В чем ключевая разница между платформами?</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="#development">
+            <div class="article-sidebar_number">2</div>
+      <p class="article-sidebar_text f-18">В мире разработки: компоненты и возможности решений</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="#client">
+            <div class="article-sidebar_number">3</div>
+      <p class="article-sidebar_text f-18">В мире клиента: какой продукт на выходе?</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="#final">
+            <div class="article-sidebar_number">4</div>
+      <p class="article-sidebar_text f-18">Заключение</p>
+          </a></li>    </ul>
+
+        <p class="article-course_progress">Сейчас вы на 1 статье <a
+        href="https://selectel.ru/blog/courses/getting-started-with-vmware/">курса</a></p>
+
+    <ul class="article-course_info">
+              <li class="article-course_info-item __active">
+          <div class="article-course_number-block">
+            <span>01</span>
+                        <span class="article-course_time">13 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/openstack_vmw/"
+             class="article-course_course-name">OpenStack vs VMware: что лучше — open source или проприетарная платформа</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>02</span>
+                        <span class="article-course_time">17 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/hypervisor-esxi/"
+             class="article-course_course-name">Гипервизор VMware ESXi: функции и отличия от ESX</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>03</span>
+                        <span class="article-course_time">9 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/vmware-nsx-t/"
+             class="article-course_course-name">VMware NSX-T: что такое и как работает</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>04</span>
+                        <span class="article-course_time">9 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/vsan-v-oblake-na-baze-vmware/"
+             class="article-course_course-name">vSAN в облаке на базе VMware</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>05</span>
+                        <span class="article-course_time">7 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/vybor-oblaka/"
+             class="article-course_course-name">Гайд по выбору облака для бизнеса: частное, публичное или гибридное?</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>06</span>
+                        <span class="article-course_time">7 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/vmware-horizon/"
+             class="article-course_course-name">Обзор VMware Horizon – платформы для организации и управления виртуальными рабочими столами</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>07</span>
+                        <span class="article-course_time">6 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/veeam-services/"
+             class="article-course_course-name">Инструменты Veeam для резервного копирования — в чем разница?</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>08</span>
+                        <span class="article-course_time">11 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/draas/"
+             class="article-course_course-name">Disaster Recovery в облако: кому нужно и как его обеспечить</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>09</span>
+                        <span class="article-course_time">5 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/tutorials/vmware-public-cloud/"
+             class="article-course_course-name">Знакомство с публичным облаком на базе VMware в Selectel</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>10</span>
+                        <span class="article-course_time">6 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/tutorials/how-to-get-started-with-public-cloud-vmware/"
+             class="article-course_course-name">Как начать работу с публичным облаком на базе VMware в Selectel</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>11</span>
+                        <span class="article-course_time">13 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/tutorials/install-vmware-tools-on-windows-and-linux/"
+             class="article-course_course-name">Установка VMware Tools на&nbsp;Windows и&nbsp;Linux: пошаговая инструкция</a>
+        </li>
+              <li class="article-course_info-item ">
+          <div class="article-course_number-block">
+            <span>12</span>
+                        <span class="article-course_time">20 минут</span>
+                      </div>
+          <a href="https://selectel.ru/blog/tutorials/installing-windows11-on-vmware/"
+             class="article-course_course-name">Установка Windows 11 на VMware: подробная инструкция</a>
+        </li>
+          </ul>
+
+          <button class="button article-course_btn button_next" type="button">
+        <span>         <svg width="9" height="16" viewBox="0 0 9 16" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="m1.332 0 6.67 6.675a1.879 1.879 0 0 1 0 2.66L1.337 16l-.943-.941L7.26 8.195a.266.266 0 0 0 0-.377L.39.949 1.332 0Z" fill="inherit"/></svg></span> Полный список курса
+        (12)
+      </button>
+        
+</nav>
+      <div class="info-page_content">
+        
+<article itemscope itemtype="http://schema.org/BlogPosting" class="article-content">
+      <meta itemprop="image" content="https://selectel.ru/blog/wp-content/uploads/2023/05/MD-744.jpeg">
+  
+  <div class="article-content_header">
+    <div class="">
+      
+<nav class="breadcrumbs " itemscope itemtype="http://schema.org/BreadcrumbList"><ol class="breadcrumbs__list"><li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumbs__link" href="https://selectel.ru/blog/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="2" /></li><li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumbs__link" href="https://selectel.ru/blog/courses/" itemprop="item"><span itemprop="name">Курсы</span></a><meta itemprop="position" content="3" /></li><li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumbs__link" href="https://selectel.ru/blog/courses/getting-started-with-vmware/" itemprop="item"><span itemprop="name">Начинаем работу с VMware</span></a><meta itemprop="position" content="4" /></li></ol></nav>      <h1 class="h2">OpenStack vs VMware: что лучше — open source или проприетарная платформа</h1>
+            <p class="article-content_text-gray f-24">
+        Чем отличается облачная платформа на OpenStack от облака на базе VMware? Собрали экспертов и подискутировали на тему того, что лучше.      </p>
+    </div>
+          <a href="https://selectel.ru/blog/courses/getting-started-with-vmware/" class="banner banner-small">
+        <p class="banner-title">Эта инструкция — часть курса &laquo;Начинаем работу с VMware&raquo;.</p>
+        <div class="banner_btn-block">
+          <p class="banner-small_bottom-text">Смотреть весь курс</p>
+          <div class="round-btn round-btn_transparent round-btn_link">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path
+                d="M11.207 1.37484e-06L9.96476 1.18388L17.7621 8.61461C17.9736 8.81612 17.815 9.16877 17.4978 9.16877L-4.35546e-07 9.16877L-3.68695e-07 10.8312L17.4978 10.8312C17.815 10.8312 17.9736 11.1839 17.7357 11.4106L9.96476 18.8161L11.207 20C11.207 20 20.2731 11.3602 20.4846 11.1839C21.1718 10.529 21.1718 9.49622 20.4846 8.84131C20.2731 8.6398 11.207 1.37484e-06 11.207 1.37484e-06Z"
+                fill=""></path>
+            </svg>
+          </div>
+        </div>
+      </a>
+      </div>
+
+        <img class="article-content_big-img" loading="lazy" src="https://selectel.ru/blog/wp-content/uploads/2023/05/MD-744.jpeg"
+           alt="Изображение записи">
+    
+  <div class="article-content_content">
+    
+<p>Чем отличается&nbsp;<a href="https://selectel.ru/services/cloud/" target="_blank" rel="noreferrer noopener">облачная платформа</a>&nbsp;на OpenStack от&nbsp;<a href="https://selectel.ru/services/cloud/vmware/public-cloud/" target="_blank" rel="noreferrer noopener">облака на базе VMware</a>? Собрали команду системных администраторов, разработчиков и продакт-менеджеров, чтобы обсудить вопрос и подискутировать на тему того, что лучше. Посмотрели на платформы с позиции пользователя, разработчика, менеджера. О том, что из этого получилось, рассказываем в статье.</p>
+
+
+
+<h2 class="wp-block-heading" id="open-source">В чем ключевая разница между платформами?</h2>
+
+
+
+<h3 class="wp-block-heading">Сторона OpenStack</h3>
+
+
+
+<p>OpenStack — это open source-решение для создания инфраструктуры на базе публичных и частных облачных сервисов. При этом важно отметить, что это не система виртуализации, а некий оркестратор для управления гипервизорами, на которых запускаются виртуальные машины. Любой специалист может&nbsp;<a href="https://codex.so/licenses" target="_blank" rel="noreferrer noopener">клонировать репозиторий</a>&nbsp;и поднять свое облако: весь код проекта написан на Python и распространяется по лицензии Apache 2.0. Вопрос только в том, насколько качественным получится результат.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full is-resized"><img decoding="async" loading="lazy" src="https://selectel.ru/blog/wp-content/uploads/2023/05/jnfvfskei6e_waypn9jgma2me-i.png" alt="" class="wp-image-34584" width="165" height="165" srcset="https://selectel.ru/blog/wp-content/uploads/2023/05/jnfvfskei6e_waypn9jgma2me-i.png 449w, https://selectel.ru/blog/wp-content/uploads/2023/05/jnfvfskei6e_waypn9jgma2me-i-300x300.png 300w, https://selectel.ru/blog/wp-content/uploads/2023/05/jnfvfskei6e_waypn9jgma2me-i-150x150.png 150w" sizes="(max-width: 165px) 100vw, 165px" /><figcaption><strong>Александр Худяков,</strong>&nbsp;руководитель отдела клиентских решений</figcaption></figure></div>
+
+
+
+<blockquote class="wp-block-quote"><p><em>«В Linux можно настроить все, и ты будешь это делать»&nbsp;</em>— наверное, это самое краткое и прямое определение open source, которое актуально для крупных проектов вроде OpenStack. Если нужно написать дополнительный сервис — напишешь самостоятельно. Если найдешь готовый — склонируешь и допишешь, когда дело дойдет до поддержки кода.</p></blockquote>
+
+
+
+<h3 class="wp-block-heading">Сторона VMware</h3>
+
+
+
+<p>VMware — это закрытая система виртуализации «из коробки». В этом смысле сравнивать ее с OpenStack не совсем корректно: его могут переписать в отличное от нативной платформы решение. Но задачу они решают одну и помогают строить облачную инфраструктуру.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full is-resized"><img decoding="async" loading="lazy" src="https://selectel.ru/blog/wp-content/uploads/2023/05/hpjp5e5z-6y23jfodxkyfwfa03k.png" alt="" class="wp-image-34585" width="166" height="166" srcset="https://selectel.ru/blog/wp-content/uploads/2023/05/hpjp5e5z-6y23jfodxkyfwfa03k.png 542w, https://selectel.ru/blog/wp-content/uploads/2023/05/hpjp5e5z-6y23jfodxkyfwfa03k-300x300.png 300w, https://selectel.ru/blog/wp-content/uploads/2023/05/hpjp5e5z-6y23jfodxkyfwfa03k-150x150.png 150w" sizes="(max-width: 166px) 100vw, 166px" /><figcaption><strong>Иван Колегов,</strong>&nbsp;менеджер облака на базе VMware</figcaption></figure></div>
+
+
+
+<blockquote class="wp-block-quote"><p>Несмотря на закрытость VMware, потенциально любой разработчик может повлиять на развитие этой платформы, написать в «саппорт» и попросить добавить новую фичу. Но по факту компания может отложить эту задачу в бесконечный бэклог и ничего не сделать вовсе. Даже если была анонсирована бета той самой фичи.</p><p>Обновления в VMware делятся на две группы: «прилетающие» от самой компании и небольшие автоматизации с API, которые можно написать самостоятельно. В этом плане решение похоже на OpenStack, при работе с которым можно подтянуть новые фичи из главного репозитория. Хотя внутри VMware все равно ничего изменить нельзя.</p></blockquote>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-3">
+<div class="wp-block-column is-layout-flow" style="flex-basis:66.66%">
+        <a class="promo-link promo-link_big" href="https://selectel.ru/services/cloud/vmware/vdi/" target="_blank"
+                 rel="noreferrer noopener">
+        <h2 class="promo-link_title">Аренда удаленных рабочих столов</h2>
+        <p class="promo-link_text f-18">Арендуйте DaaS в&nbsp;облаке на&nbsp;базе VMware Horizon VDI для безопасной работы из&nbsp;любой точки мира.</p>
+
+        
+        <div class="round-btn round-btn_transparent round-btn_link">
+          <svg width="21" height="20" viewBox="0 0 21 20" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M11.207 0 9.965 1.184l7.797 7.43c.212.202.053.555-.264.555H0v1.662h17.498c.317 0 .476.353.238.58l-7.771 7.405L11.207 20s9.066-8.64 9.278-8.816a1.589 1.589 0 0 0 0-2.343L11.207 0Z" fill="inherit"/></svg>        </div>
+      </a>
+      
+
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow" style="flex-basis:33.33%"></div>
+</div>
+
+
+
+<h2 class="wp-block-heading" id="management">В мире управления продуктами: что сложнее разра<a href="#2">батывать</a></h2>
+
+
+
+<p>Открытость/закрытость OpenStack и VMware влияет на операционные затраты компаний, которые их используют. В первую очередь это связано с количеством специалистов, необходимых для разработки и поддержания облаков. Давайте обсудим это подробнее — на примере продуктов Selectel.</p>
+
+
+
+<h3 class="wp-block-heading">Сторона OpenStack</h3>
+
+
+
+<blockquote class="wp-block-quote"><p><em>OpenStack изначально задумывался под частные, а не публичные облака. Поэтому у разработчиков не было задачи предоставить публичное решение и сразу его продавать. Если нужно поднять частное облако, проблем не будет. Но по-быстрому установить OpenStack и предоставить публичное облако как услугу не получится — нужна команда разработчиков.</em></p></blockquote>
+
+
+
+<p>Облачная платформа Selectel построена на OpenStack и довольно много разработчиков занимаются развитием отдельных ее компонентов. Есть команды виртуальных серверов, дисков, хранилища, сетей и другие. Кроме них — команды инфраструктурных администраторов, отвечающие за железные хосты и деплой OpenStack, и дежурная служба, которая решает клиентские задачи. И это еще без учета фронтенд-разработчиков, UX-проектировщиков и тестировщиков.</p>
+
+
+
+<h3 class="wp-block-heading">Сторона VMware</h3>
+
+
+
+<blockquote class="wp-block-quote"><p><em>Поднять облако VMware может даже один администратор. Для квалифицированного специалиста это похоже на простое скачивание программы. Но, если разработчик ничего не знает о «внутрянке», вряд ли получится развить облако как услугу. Поэтому у нас есть команда, которая постоянно работает с клиентскими задачами и старается улучшить путь от регистрации до развертывания машин.&nbsp;</em></p></blockquote>
+
+
+
+<p>Большая часть специалистов облака на базе VMware — администраторы. Они следят, чтобы все работало стабильно, распределяют квоты и ресурсы, отвечают на вопросы клиентов. Треть команды — разработчики, которые пишут различные интерфейсы поверх API VMware. Например, функциональность для автоматизации и создания сетей, работы с биллинговой системой, VMware Terraform и так далее. Если хотите присоединиться и развивать публичные и частные облака вместе с нами,&nbsp;<a href="https://selectel.ru/careers/all/" target="_blank" rel="noreferrer noopener">следите за вакансиями</a>.</p>
+
+
+
+<h2 class="wp-block-heading" id="development">В мире разработки: компоненты и возможности решений</h2>
+
+
+
+<h3 class="wp-block-heading">Гипервизоры</h3>
+
+
+
+<p>В качестве гипервизора в&nbsp;<strong>VMware</strong>&nbsp;встроен ESXi. Это решение, которое эмулирует аппаратные ресурсы, позволяет безопасно выполнять машинные инструкции, изолирует и разделяет ресурсы виртуальных машин. ESXi следит, чтобы операционные системы работали в рамках своей виртуализации и не затрагивали «чужие области памяти».</p>
+
+
+
+<p>В&nbsp;<strong>OpenStack</strong>&nbsp;можно использовать, например, тот же ESXi или Qemu. Мы в облачной платформе Selectel используем KVM — это популярное open source-решение по виртуализации, которое поддерживает все основные дистрибутивы Linux. Так, клиент облачной платформы может установить на виртуальную машину любой из 26 готовых образов. Например, Ubuntu 18.04, 20.04 или 22.04, Fedora 35 или 36, Windows Server 2012–2019, Debian, CentOs и другое.</p>
+
+
+
+<p>По умолчанию облако на базе VMware также поддерживает большое количество дистрибутивов. Среди них — Windows Server 2012R2–2022, Ubuntu 16.04, 18.04, 20.04, Oracle Linux 7, CentOS 7, RHEL 7, а также сборки ubuntu-16.04_k8.</p>
+
+
+
+<h3 class="wp-block-heading">Хранение данных</h3>
+
+
+
+<p>Обычно для хранения данных вместе с&nbsp;<strong>VMware</strong>&nbsp;используют аппаратные СХД вроде NetApp, Dell, HPE, Fujitsu, Hitachi и других. Мы в облаке на базе VMware выбрали vSAN. Это объектное хранилище с возможностью гиперконвергенции, которое позволяет объединять диски со всех хостов виртуализации. В результате клиенты могут использовать разные политики хранения (Storage Policies) данных в рамках одного кластера — например, vSSD и vHDD. А также управлять «распределением данных», не меняя само железо.</p>
+
+
+
+<p>Хранение данных в&nbsp;<strong>OpenStack</strong>&nbsp;реализовано похожим образом. В качестве СХД облачной платформы мы в Selectel используем Ceph. Это одна из самых распространенных Cloud Storage систем, на базе которой можно сделать, например, объектное или блочное хранилища, кластерную FS.</p>
+
+
+
+<h3 class="wp-block-heading">Интерфейс и управление виртуальными машинами</h3>
+
+
+
+<p>В основе&nbsp;<strong>VMware</strong>&nbsp;— Cloud Director. Это платформа, с помощью которой можно создавать свои виртуальные машины, настраивать сети, NAT и файрволы. У нас в облаке на базе VMware есть также панель управления, через которую клиент может работать с верхнеуровневым интерфейсом. С помощью него можно управлять виртуальными дата-центрами, следить за потреблением ресурсов и заказывать дополнительные услуги.</p>
+
+
+
+<p>В нативном&nbsp;<strong>OpenStack</strong>&nbsp;в качестве «промежуточного звена» вроде Cloud Director есть панель Horizon, которая идет в комплекте. Но когда она появилась, ее качество было сомнительным. Поэтому мы в облачной платформе разработали свою панель управления, которая упрощает работу с виртуальными машинами.</p>
+
+
+
+<p>Кроме базовых компонентов ядра OpenStack (Nova, Neutron, Cinder, Keystone), облачная платформа использует дополнительные модули. Например, компонент Glance для хранения образов и другие сервисы для служебных целей. В общей сумме их несколько десятков — в том числе Watcher и Octavia.</p>
+
+
+
+<p>Почти все компоненты пропатчены от багов и дополняют функционал облачной платформы как для обычных пользователей, так и для разработчиков. В результате у пользователей есть функциональный интерфейс и возможность управлять инфраструктурой через OpenStack API.</p>
+
+
+
+<blockquote class="wp-block-quote"><p>Если вам интересно, как мы автоматизировали тестирование OpenStack с помощью Tempest и Rally, переходите по&nbsp;<a href="https://selectel.ru/blog/openstack_test/" target="_blank" rel="noreferrer noopener">ссылке</a>.</p></blockquote>
+
+
+
+<h2 class="wp-block-heading" id="client">В мире клиента: какой продукт на выходе?</h2>
+
+
+
+<p>Технические особенности OpenStack и VMware вносят свои коррективы. Посмотрим на конечный продукт и сравним облачную платформу, реализованную на нашем дистрибутиве OpenStack, с облаком на базе VMware.</p>
+
+
+
+<h3 class="wp-block-heading">Сторона OpenStack</h3>
+
+
+
+<p>Открытость OpenStack предоставляет большой простор для разработки отказоустойчивых сервисов.</p>
+
+
+
+<ul><li><strong>Облачные серверы&nbsp;</strong>— виртуальные машины с оплатой по потреблению и соответствием 152-ФЗ, доступные в различных конфигурациях.&nbsp;</li><li><strong>Приватные решения публичного облака&nbsp;</strong>— изолированный хост, сегмент или весь пул на базе публичного облака.&nbsp;</li><li><strong>Частное облако&nbsp;</strong>— полностью изолированное облако на вашей инфраструктуре с возможностью управления из нашей панели.&nbsp;</li><li><strong>Аттестованное облако&nbsp;</strong>— виртуальные серверы, аттестованные для работы с государственными информационными системами до класса 1 (К1), 1Г и ИСПДн до УЗ-1.</li></ul>
+
+
+
+<p>Вместе со всеми продуктами можно использовать хранилище с резервным копированием, базы данных и контейнеры Managed Kubernetes в рамках одной приватной сети.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img decoding="async" src="https://habrastorage.org/webt/el/mr/cx/elmrcxgnmotsiscbsob_iidfym0.gif" alt=""/></figure></div>
+
+
+
+<p>Кроме того, в облачной платформе есть система управления доступами. Прямо в панели управления можно добавить пользователя и назначить ему роль. Главное условное — чтобы он был зарегистрирован.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img decoding="async" loading="lazy" src="https://habrastorage.org/r/w1560/webt/hx/dv/ee/hxdveeqr6v4bww_bb2ffc9aghb0.png" alt="" width="555" height="376"/></figure></div>
+
+
+
+<h3 class="wp-block-heading">Сторона VMware</h3>
+
+
+
+<p>Клиенты облака на базе VMware работают с другим уровнем «абстракций». В панели управления они могут создавать виртуальные дата-центры с лимитами по количеству виртуальных ядер, оперативной и долговременной памяти.</p>
+
+
+
+<ul><li><strong>Публичное облако&nbsp;</strong>— масштабируемая инфраструктура с оплатой по потреблению и соответствием 152-ФЗ до первого уровня защищенности.&nbsp;</li><li><strong>Частное облако&nbsp;</strong>— полностью изолированная от других клиентов виртуальная инфраструктура с ежемесячной фиксированной оплатой.</li><li><strong>Удаленные рабочие столы в облаке&nbsp;</strong>— аренда виртуальных рабочих мест на базе VMware Horizon VDI.&nbsp;</li><li><strong>Резервное копирование облака&nbsp;</strong>— копирование, хранение и восстановление данных виртуальных машин и приложений с помощью Veeam® Backup &amp; Replication™.&nbsp;</li><li><strong>Аварийное восстановление в облако&nbsp;</strong>— построение отказоустойчивой инфраструктуры без капитальных затрат с&nbsp;<a href="https://selectel.ru/blog/draas/" target="_blank" rel="noreferrer noopener">Disaster Recovery as a Service</a>.</li></ul>
+
+
+
+<p>Публичное облако, резервное копирование и аварийное восстановление доступны в панели управления и Cloud Director, с помощью которого можно мониторить потребление ресурсов, управлять виртуальными машинами, файерволами и маршрутизацией в Edge-роутерах.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img decoding="async" src="https://habrastorage.org/webt/0o/ex/c6/0oexc66pfzfsktcwdmchvkup5ri.gif" alt=""/></figure></div>
+
+
+
+<p>В облаке на базе VMware также есть система доступов. Можно создавать группы и пользователей прямо в панели управления или через Cloud Director. В последнем случае неважно, зарегистрирован ли аккаунт в самой панели Selectel.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img decoding="async" src="https://habrastorage.org/r/w1560/webt/4j/fy/hc/4jfyhcno4vqwmkhq2arvor-nsrc.png" alt=""/></figure></div>
+
+
+
+<h3 class="wp-block-heading">Как использовать преимущества двух облаков</h3>
+
+
+
+<p>Облачная платформа и облако на базе VMware не ограничивают в инфраструктуре. С помощью&nbsp;<a href="https://selectel.ru/blog/global-router/" target="_blank" rel="noreferrer noopener">глобального роутера</a>&nbsp;их можно объединить в приватную сеть с другими продуктами Selectel, удаленным дата-центром или on-premise площадкой.</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td><a href="https://selectel.ru/services/dedicated/" target="_blank" rel="noreferrer noopener">Выделенные серверы</a></td><td><a href="https://selectel.ru/services/cloud/managed-databases/" target="_blank" rel="noreferrer noopener">Облачные базы данных</a></td><td><a href="https://selectel.ru/lab/file-storage" target="_blank" rel="noreferrer noopener">Файловое хранилище SFS</a></td><td><a href="https://selectel.ru/services/additional/firewall/" target="_blank" rel="noreferrer noopener">Межсетевые услуги</a></td></tr><tr><td><a href="https://selectel.ru/services/cloud/servers/" target="_blank" rel="noreferrer noopener">Облачные серверы</a></td><td><a href="https://selectel.ru/services/cloud/kubernetes/" target="_blank" rel="noreferrer noopener">Кластеры Kubernetes</a></td><td><a href="https://selectel.ru/services/cloud/vmware/" target="_blank" rel="noreferrer noopener">Облако на базе VMware</a></td><td><a href="https://selectel.ru/services/colocation/" target="_blank" rel="noreferrer noopener">Colocation</a></td></tr></tbody></table><figcaption><em>Продукты, которые можно связать с помощью глобального роутера.</em></figcaption></figure>
+
+
+
+<p>Сетевая связность позволяет совмещать преимущества нескольких услуг. Например, можно использовать удаленные рабочие столы в связке c виртуальными машинами облачной платформы. Подробнее о кейсах читайте по&nbsp;<a href="https://habr.com/ru/companies/selectel/articles/721274/" target="_blank" rel="noreferrer noopener">ссылке</a>.</p>
+
+
+
+<h2 class="wp-block-heading" id="final">Заключение</h2>
+
+
+
+<p>Выбор между OpenStack и VMware касается не только провайдера и разработчиков. Клиенты могут получить облако со знакомой оболочкой Cloud Director, если работали с VMware ранее, или интерфейсом в панели управления Selectel. Вместе с этим — разные возможности по управлению доступом, мониторингу и управлению виртуальными серверами. А если нужно совместить преимущества сразу двух облаков — объединить их в рамках одной приватной сети.</p>
+
+
+
+<h3 class="wp-block-heading">Присоединяйтесь к дискуссии</h3>
+
+
+
+<p>Мы рассмотрели лишь базовые вопросы. В видеоверсии дискуссии эксперты обсудили лицензирование, перспективы развития облачной платформы на OpenStack и облака на базе VMware. А также ответили на вопросы зрителей.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" title="Открытая дискуссия Selectel:OpenStack vs VMware" width="500" height="281" src="https://www.youtube.com/embed/x4UbWw374fw?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div></figure>
+
+          <div class="article-content-tag-block">
+        <a class="tag f-12" href="https://selectel.ru/blog/tag/openstack/">OpenStack</a><a class="tag f-12" href="https://selectel.ru/blog/tag/vmware/">VMware</a><a class="tag f-12" href="https://selectel.ru/blog/tag/data-centers/">Дата-центры</a><a class="tag f-12" href="https://selectel.ru/blog/tag/cloud/">Облачные серверы</a>      </div>
+      </div>
+</article>
+
+  <div class="course-change">
+
+    
+          <div href="/#" class="course-change_link __prev" style="opacity: 0">
+        <div class="round-btn round-btn_dark round-btn_link">
+          <svg width="21" height="20" viewBox="0 0 21 20" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M11.207 0 9.965 1.184l7.797 7.43c.212.202.053.555-.264.555H0v1.662h17.498c.317 0 .476.353.238.58l-7.771 7.405L11.207 20s9.066-8.64 9.278-8.816a1.589 1.589 0 0 0 0-2.343L11.207 0Z" fill="inherit"/></svg>        </div>
+      </div>
+    
+            <a href="https://selectel.ru/blog/hypervisor-esxi/" class="course-change_link __next">
+                    <p class="f-12 course-change_time">17 минут</p>
+                    <p class="f-24 course-change_name-course">Гипервизор VMware ESXi: функции и отличия от ESX</p>
+          <p class="f-12 course-change_about-change">Следующий материал</p>
+          <div class="round-btn round-btn_transparent round-btn_link">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M11.207 0 9.965 1.184l7.797 7.43c.212.202.053.555-.264.555H0v1.662h17.498c.317 0 .476.353.238.58l-7.771 7.405L11.207 20s9.066-8.64 9.278-8.816a1.589 1.589 0 0 0 0-2.343L11.207 0Z" fill="inherit"/></svg>
+          </div>
+        </a>
+            </div>
+
+
+
+        <a class="promo-link promo-link_big" href="https://my.selectel.ru/" target="_blank"
+                  style="background-image: url('https://selectel.ru/blog/wp-content/uploads/2023/04/promo-reg-bg.png ')"
+                 rel="noreferrer noopener">
+        <h2 class="promo-link_title">Зарегистрируйтесь в панели управления</h2>
+        <p class="promo-link_text f-18">И уже через пару минут сможете арендовать сервер, развернуть базы данных или обеспечить быструю доставку контента.</p>
+
+        
+        <div class="round-btn round-btn_transparent round-btn_link">
+          <svg width="21" height="20" viewBox="0 0 21 20" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M11.207 0 9.965 1.184l7.797 7.43c.212.202.053.555-.264.555H0v1.662h17.498c.317 0 .476.353.238.58l-7.771 7.405L11.207 20s9.066-8.64 9.278-8.816a1.589 1.589 0 0 0 0-2.343L11.207 0Z" fill="inherit"/></svg>        </div>
+      </a>
+      
+
+      </div>
+
+      <div id="js-post-end"></div>
+      <script>
+        (function () {
+          const postFooter = document.querySelector('#js-post-end')
+
+          if (postFooter) {
+            const observer = new IntersectionObserver(([entry]) => {
+              if (entry.isIntersecting) {
+                localStorage.setItem('post_34583', 'true')
+                posthog.capture('academy_post_read', {
+                  action: 'done',
+                  label: window.location.href
+                })
+              }
+            })
+            observer.observe(postFooter)
+          }
+        })()
+      </script>
+    </div>
+      <h2 class="article_material-title related-posts-title">Читайте также:</h2>
+  <div class="article_material-block">
+          <div>
+        
+<article class="material material_small">
+  <div class="material_img-block">
+    <picture>
+              <img loading="lazy" src="https://selectel.ru/blog/wp-content/uploads/2024/01/MD-1912.jpeg" alt="Изображение записи">
+          </picture>
+          <div class="material_tags-block">
+        <a class="tag tag_white f-12" href="https://selectel.ru/blog/category/infrastructure/">Инфраструктура</a>      </div>
+      </div>
+  <a class="material_link_cover" href="https://selectel.ru/blog/what-is-iam/"></a>
+  <h3 class="material_link f-24">Управление идентификацией и доступом. Руководство по IAM для начинающих</h3>
+  <a href="https://selectel.ru/blog/author/ushakovaa/" class="author-tag ">
+      <img loading="lazy" src="https://selectel.ru/blog/wp-content/uploads/2023/05/image1-min-scaled-400x400.jpeg" alt="Анна Ушакова">
+      <div class="author-tag__info">
+      <span class="author-tag_name f-12">Анна Ушакова</span>
+              <span class="author-tag_post f-12">Системный администратор</span>
+          </div>
+  </a>
+</article>
+      </div>
+          <div>
+        
+<article class="material material_small">
+  <div class="material_img-block">
+    <picture>
+              <img loading="lazy" src="https://selectel.ru/blog/wp-content/uploads/2024/01/MD-1924-2.png" alt="Изображение записи">
+          </picture>
+          <div class="material_tags-block">
+        <a class="tag tag_white f-12" href="https://selectel.ru/blog/category/infrastructure/">Инфраструктура</a>      </div>
+      </div>
+  <a class="material_link_cover" href="https://selectel.ru/blog/certified-systems/"></a>
+  <h3 class="material_link f-24">Как создавать аттестованные системы на инфраструктуре Selectel</h3>
+  <a href="https://selectel.ru/blog/author/andrewdavid/" class="author-tag ">
+      <img loading="lazy" src="https://selectel.ru/blog/wp-content/uploads/2023/05/Андрей-Давид-400x400.jpg" alt="Андрей Давид">
+      <div class="author-tag__info">
+      <span class="author-tag_name f-12">Андрей Давид</span>
+              <span class="author-tag_post f-12">Руководитель продуктов клиентской безопасности</span>
+          </div>
+  </a>
+</article>
+      </div>
+          <div>
+        
+<article class="material material_small">
+  <div class="material_img-block">
+    <picture>
+              <img loading="lazy" src="https://selectel.ru/blog/wp-content/uploads/2024/01/MD-1806.jpeg" alt="Изображение записи">
+          </picture>
+          <div class="material_tags-block">
+        <a class="tag tag_white f-12" href="https://selectel.ru/blog/category/infrastructure/">Инфраструктура</a>      </div>
+      </div>
+  <a class="material_link_cover" href="https://selectel.ru/blog/fault-tolerant-infrastructure/"></a>
+  <h3 class="material_link f-24">Отказоустойчивая IT-инфраструктура: принципы и способы организации</h3>
+  <a href="https://selectel.ru/blog/author/vladdidenko/" class="author-tag ">
+      <img loading="lazy" src="https://selectel.ru/blog/wp-content/uploads/2023/09/vlad_didenko.png" alt="Владислав Диденко">
+      <div class="author-tag__info">
+      <span class="author-tag_name f-12">Владислав Диденко</span>
+              <span class="author-tag_post f-12">Системный администратор VMware</span>
+          </div>
+  </a>
+</article>
+      </div>
+      </div>
+  
+  </section>
+
+</main>
+<footer class="footer">
+  <div class="footer_body">
+    <div class="footer_left">
+      <nav>
+        <ul id="menu-footer-main-menu" class="footer-nav-list"><li id="menu-item-33577" class="menu-item footer-nav-item menu-item-type-post_type menu-item-object-page menu-item-33577"><a class="footer-nav-link"href="https://selectel.ru/blog/all/">Блог</a></li>
+<li id="menu-item-33578" class="menu-item footer-nav-item menu-item-type-post_type_archive menu-item-object-courses menu-item-33578"><a class="footer-nav-link"href="https://selectel.ru/blog/courses/">Курсы</a></li>
+<li id="menu-item-33579" class="menu-item footer-nav-item menu-item-type-post_type_archive menu-item-object-events menu-item-33579"><a class="footer-nav-link"href="https://selectel.ru/blog/events/">Мероприятия</a></li>
+</ul>      </nav>
+      <form class="footer-form-block footer-form-block--desktop js-form-subscribe" novalidate>
+        <div class="footer-form-block_input-block">
+          <p class="form_error-text js-input-error-email" style="color: #FF7B7F; left: 1.5rem"></p>
+          <input class="form_input-email" type="email" name="email" placeholder="Email" required>
+          <button class="form_btn-submit round-btn round-btn_small footer-form_round-btn"  type="submit">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M11.207 0 9.965 1.184l7.797 7.43c.212.202.053.555-.264.555H0v1.662h17.498c.317 0 .476.353.238.58l-7.771 7.405L11.207 20s9.066-8.64 9.278-8.816a1.589 1.589 0 0 0 0-2.343L11.207 0Z" fill="inherit"/></svg>          </button>
+        </div>
+        <div class="checkbox__error js-input-error-subscription" style="color: #FF7B7F;margin-bottom: 5px; margin-left: 3.5rem;"></div>
+        <div class="footer-confirm-block">
+          <div class="footer-confirm-input">
+            <input class="form_confirm-input-checkbox" id="subscribe" type="checkbox"
+                   name="subscription" required>
+            <div class="footer-confirm-checkbox"></div>
+          </div>
+          <label for="subscribe" class="f-14">
+            <a class="footer-confirm_link"
+               href="https://files.selectel.ru/docs/ru/consent-to-personal-data-processing.pdf" target="_blank" rel="noreferrer noopener">Соглашаюсь</a>
+            на получение
+            новостной рассылки <br>в соответствии с
+            <a class="footer-confirm_link"
+               href="https://files.selectel.ru/docs/ru/personal-data-processing-and-protection-policy.pdf" target="_blank" rel="noreferrer noopener">Политикой</a></label>
+        </div>
+
+        <div class="form_success-text f-24" style="display: none; color: #fff">
+          Спасибо! Осталось подтвердить подписку. Проверьте почту, мы&nbsp;уже отправили вам письмо.
+        </div>
+
+        <div class="form_all-error-text f-24" style="display: none; color: #fff">
+          Ошибка отправки <br>Перезагрузите страницу и отправьте форму еще раз.
+        </div>
+      </form>
+    </div>
+    <div class="footer_right">
+      <a class="footer-site-link fs-24" href="https://selectel.ru" target="_blank"
+         rel="noreferrer noopener">selectel.ru</a>
+      <nav>
+        <ul id="menu-footer-sub-menu" class="footer-submenu-list"><li id="menu-item-33580" class="menu-item footer-submenu-item menu-item-type-custom menu-item-object-custom menu-item-33580"><a class="footer-submenu-link" target="_balnk" rel="noreferrer noopener"target="_blank" rel="noopener" href="https://selectel.ru/investors/">Инвесторам</a></li>
+<li id="menu-item-33581" class="menu-item footer-submenu-item menu-item-type-custom menu-item-object-custom menu-item-33581"><a class="footer-submenu-link" target="_balnk" rel="noreferrer noopener"target="_blank" rel="noopener" href="https://selectel.ru/about/company/">О компании</a></li>
+<li id="menu-item-33582" class="menu-item footer-submenu-item menu-item-type-custom menu-item-object-custom menu-item-33582"><a class="footer-submenu-link" target="_balnk" rel="noreferrer noopener"target="_blank" rel="noopener" href="https://selectel.ru/about/newsroom/materials/">Прессе</a></li>
+<li id="menu-item-33583" class="menu-item footer-submenu-item menu-item-type-custom menu-item-object-custom menu-item-33583"><a class="footer-submenu-link" target="_balnk" rel="noreferrer noopener"target="_blank" rel="noopener" href="https://docs.selectel.ru/">Документация</a></li>
+<li id="menu-item-33584" class="menu-item footer-submenu-item menu-item-type-custom menu-item-object-custom menu-item-33584"><a class="footer-submenu-link" target="_balnk" rel="noreferrer noopener"target="_blank" rel="noopener" href="https://selectel.ru/about/details/">Юристам</a></li>
+<li id="menu-item-33585" class="menu-item footer-submenu-item menu-item-type-custom menu-item-object-custom menu-item-33585"><a class="footer-submenu-link" target="_balnk" rel="noreferrer noopener"target="_blank" rel="noopener" href="https://selectel.ru/careers/">Карьера</a></li>
+</ul>      </nav>
+
+      <ul class="footer-social-list footer-social-list--desktop">
+
+                  <li class="footer-social-item">
+            <a class="footer-social-link" href="https://vk.com/selectelcareers" target="_blank" rel="noreferrer noopener">
+              <svg width="53" height="53" viewBox="0 0 53 53" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M28.155 35.318c-9.403 0-15.112-6.523-15.33-17.366h4.755c.15 7.943 3.774 11.349 6.554 12.034V17.952H28.7v6.87c2.671-.297 5.481-3.415 6.425-6.87h4.488a13.247 13.247 0 0 1-5.958 8.658 13.732 13.732 0 0 1 6.95 8.708h-4.964a8.44 8.44 0 0 0-6.94-6.235v6.196l-.547.04Z" fill="inherit"/></svg>            </a>
+          </li>
+                  <li class="footer-social-item">
+            <a class="footer-social-link" href="https://twitter.com/selectel" target="_blank" rel="noreferrer noopener">
+              <svg width="53" height="53" viewBox="0 0 53 53" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M39.458 18.464a10.31 10.31 0 0 1-2.944.817l-.052.005a5.287 5.287 0 0 0 2.284-2.85l.011-.038a10.569 10.569 0 0 1-3.247 1.244l-.07.012a5.219 5.219 0 0 0-8.886 4.79l-.007-.036a14.772 14.772 0 0 1-10.734-5.411l-.021-.026a5.06 5.06 0 0 0-.707 2.594v.033-.002.005c0 1.801.914 3.39 2.303 4.328l.019.012a5.187 5.187 0 0 1-2.39-.667l.027.014v.065a5.223 5.223 0 0 0 4.151 5.112l.034.006a5.32 5.32 0 0 1-2.38.084l.033.005c.691 2.09 2.608 3.58 4.878 3.624h.005a10.397 10.397 0 0 1-6.461 2.233h-.012c-.437 0-.868-.026-1.292-.075l.052.005a14.7 14.7 0 0 0 8.005 2.343h.012-.001.107c8.141 0 14.741-6.6 14.741-14.741v-.099.005c0-.222 0-.445-.016-.668a10.63 10.63 0 0 0 2.586-2.665l.023-.037-.05-.02Z" fill="inherit"/></svg>            </a>
+          </li>
+                  <li class="footer-social-item">
+            <a class="footer-social-link" href="https://www.youtube.com/channel/UCVU0Ml1l_Y90wmy5EjWTSng" target="_blank" rel="noreferrer noopener">
+              <svg width="54" height="53" viewBox="0 0 54 53" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M38.799 19.907a3.213 3.213 0 0 0-2.26-2.26c-2.007-.55-10.035-.55-10.035-.55s-8.027 0-10.034.528a3.279 3.279 0 0 0-2.26 2.282c-.528 2.006-.528 6.168-.528 6.168s0 4.183.528 6.168a3.213 3.213 0 0 0 2.26 2.26c2.028.55 10.034.55 10.034.55s8.028 0 10.034-.528a3.213 3.213 0 0 0 2.26-2.26c.529-2.007.529-6.169.529-6.169s.021-4.183-.528-6.19Z" fill="inherit"/><path d="m23.945 29.92 6.676-3.845-6.676-3.845v7.69Z" fill="#092433"/></svg>            </a>
+          </li>
+                  <li class="footer-social-item">
+            <a class="footer-social-link" href="https://t.me/selectel" target="_blank" rel="noreferrer noopener">
+              <svg width="54" height="53" viewBox="0 0 54 53" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.129 25.377c6.23-2.714 10.384-4.504 12.463-5.368 5.935-2.469 7.168-2.898 7.972-2.912.177-.003.572.04.828.248.216.176.276.413.304.58.029.166.064.544.036.84-.322 3.38-1.713 11.58-2.421 15.365-.3 1.602-.89 2.139-1.46 2.191-1.242.115-2.184-.82-3.386-1.608-1.881-1.233-2.944-2-4.77-3.203-2.11-1.39-.742-2.155.46-3.404.315-.327 5.784-5.3 5.89-5.752.013-.056.025-.267-.1-.378-.125-.11-.31-.073-.442-.043-.19.043-3.194 2.03-9.015 5.959-.853.585-1.625.87-2.318.856-.763-.017-2.23-.432-3.322-.786-1.338-.435-2.402-.665-2.31-1.404.05-.385.579-.779 1.59-1.18Z" fill="inherit"/></svg>            </a>
+          </li>
+                  <li class="footer-social-item">
+            <a class="footer-social-link" href="https://habr.com/ru/company/selectel/" target="_blank" rel="noreferrer noopener">
+              <svg width="54" height="53" viewBox="0 0 54 53" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M18 13h2.722c2.038 0 2.736.045 2.78.189.033.111.053 2.28.053 4.832l-.012 4.637.788-.704c1.1-.97 2.025-1.31 3.777-1.374 1.153-.033 1.622.012 2.43.3 1.771.593 3.022 1.81 3.673 3.607.254.704.287 1.44.333 7.145l.052 6.375h-5.568v-5.202c0-5.126-.012-5.19-.357-5.816-.49-.826-1.017-1.205-1.85-1.295-1.419-.156-2.403.325-2.963 1.485-.268.534-.3 1.094-.313 5.594-.02 2.749-.052 5.054-.052 5.113-.013.079-1.25.124-2.755.124H18.01V25.506L18 13Z" fill="inherit"/></svg>            </a>
+          </li>
+        
+        <li class="footer-social-item rss">
+          <a class="footer-social-link" href="https://selectel.ru/blog/feed/" target="_blank" rel="noreferrer noopener">
+            <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.42 37.006a15.393 15.393 0 0 0-4.536-10.958 15.39 15.39 0 0 0-10.958-4.536v3.833a11.59 11.59 0 0 1 8.247 3.414 11.579 11.579 0 0 1 3.414 8.248h3.834Z" fill="#fff"/><path d="M29.662 23.27a19.291 19.291 0 0 1 5.687 13.735h3.833a23.098 23.098 0 0 0-6.81-16.446 23.098 23.098 0 0 0-16.444-6.809l-.001 3.833a19.289 19.289 0 0 1 13.735 5.687Z" fill="#fff"/><circle cx="18.95" cy="33.95" r="3.5" transform="rotate(45 18.95 33.95)" fill="#fff"/></svg>          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <form class="footer-form-block footer-form-block--mobile js-form-subscribe" novalidate>
+      <div class="footer-form-block_input-block">
+        <p class="form_error-text js-input-error-email" style="color: #FF7B7F; left: 1.5rem"></p>
+        <input class="form_input-email" type="email" name="email" placeholder="Email" required>
+        <button class="form_btn-submit round-btn round-btn_small footer-form_round-btn"  type="submit">
+          <svg width="21" height="20" viewBox="0 0 21 20" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M11.207 0 9.965 1.184l7.797 7.43c.212.202.053.555-.264.555H0v1.662h17.498c.317 0 .476.353.238.58l-7.771 7.405L11.207 20s9.066-8.64 9.278-8.816a1.589 1.589 0 0 0 0-2.343L11.207 0Z" fill="inherit"/></svg>        </button>
+      </div>
+      <div class="checkbox__error js-input-error-subscription" style="color: #FF7B7F;margin-bottom: 5px; margin-left: 3.5rem;"></div>
+      <div class="footer-confirm-block">
+        <div class="footer-confirm-input">
+          <input class="form_confirm-input-checkbox" id="subscribe" type="checkbox" name="subscription" required>
+          <div class="footer-confirm-checkbox"></div>
+        </div>
+        <label for="subscribe" class="f-14">
+          <a class="footer-confirm_link"
+             href="https://files.selectel.ru/docs/ru/consent-to-personal-data-processing.pdf" target="_blank" rel="noreferrer noopener">Соглашаюсь</a>
+          на получение
+          новостной рассылки <br>в соответствии с
+          <a class="footer-confirm_link"
+             href="https://files.selectel.ru/docs/ru/personal-data-processing-and-protection-policy.pdf" target="_blank" rel="noreferrer noopener">Политикой</a></label>
+      </div>
+
+      <div class="form_success-text f-24" style="display: none; color: #fff">
+        Спасибо! Осталось подтвердить подписку. Проверьте почту, мы&nbsp;уже отправили вам письмо.
+      </div>
+
+      <div class="form_all-error-text f-24" style="display: none; color: #fff">
+        Ошибка отправки.<br>Перезагрузите страницу и отправьте форму еще раз.
+      </div>
+    </form>
+
+    <ul class="footer-social-list footer-social-list--mobile">
+              <li class="footer-social-item">
+          <a class="footer-social-link" href="https://vk.com/selectelcareers" target="_blank">
+            <svg width="53" height="53" viewBox="0 0 53 53" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M28.155 35.318c-9.403 0-15.112-6.523-15.33-17.366h4.755c.15 7.943 3.774 11.349 6.554 12.034V17.952H28.7v6.87c2.671-.297 5.481-3.415 6.425-6.87h4.488a13.247 13.247 0 0 1-5.958 8.658 13.732 13.732 0 0 1 6.95 8.708h-4.964a8.44 8.44 0 0 0-6.94-6.235v6.196l-.547.04Z" fill="inherit"/></svg>          </a>
+        </li>
+              <li class="footer-social-item">
+          <a class="footer-social-link" href="https://twitter.com/selectel" target="_blank">
+            <svg width="53" height="53" viewBox="0 0 53 53" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M39.458 18.464a10.31 10.31 0 0 1-2.944.817l-.052.005a5.287 5.287 0 0 0 2.284-2.85l.011-.038a10.569 10.569 0 0 1-3.247 1.244l-.07.012a5.219 5.219 0 0 0-8.886 4.79l-.007-.036a14.772 14.772 0 0 1-10.734-5.411l-.021-.026a5.06 5.06 0 0 0-.707 2.594v.033-.002.005c0 1.801.914 3.39 2.303 4.328l.019.012a5.187 5.187 0 0 1-2.39-.667l.027.014v.065a5.223 5.223 0 0 0 4.151 5.112l.034.006a5.32 5.32 0 0 1-2.38.084l.033.005c.691 2.09 2.608 3.58 4.878 3.624h.005a10.397 10.397 0 0 1-6.461 2.233h-.012c-.437 0-.868-.026-1.292-.075l.052.005a14.7 14.7 0 0 0 8.005 2.343h.012-.001.107c8.141 0 14.741-6.6 14.741-14.741v-.099.005c0-.222 0-.445-.016-.668a10.63 10.63 0 0 0 2.586-2.665l.023-.037-.05-.02Z" fill="inherit"/></svg>          </a>
+        </li>
+              <li class="footer-social-item">
+          <a class="footer-social-link" href="https://www.youtube.com/channel/UCVU0Ml1l_Y90wmy5EjWTSng" target="_blank">
+            <svg width="54" height="53" viewBox="0 0 54 53" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M38.799 19.907a3.213 3.213 0 0 0-2.26-2.26c-2.007-.55-10.035-.55-10.035-.55s-8.027 0-10.034.528a3.279 3.279 0 0 0-2.26 2.282c-.528 2.006-.528 6.168-.528 6.168s0 4.183.528 6.168a3.213 3.213 0 0 0 2.26 2.26c2.028.55 10.034.55 10.034.55s8.028 0 10.034-.528a3.213 3.213 0 0 0 2.26-2.26c.529-2.007.529-6.169.529-6.169s.021-4.183-.528-6.19Z" fill="inherit"/><path d="m23.945 29.92 6.676-3.845-6.676-3.845v7.69Z" fill="#092433"/></svg>          </a>
+        </li>
+              <li class="footer-social-item">
+          <a class="footer-social-link" href="https://t.me/selectel" target="_blank">
+            <svg width="54" height="53" viewBox="0 0 54 53" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.129 25.377c6.23-2.714 10.384-4.504 12.463-5.368 5.935-2.469 7.168-2.898 7.972-2.912.177-.003.572.04.828.248.216.176.276.413.304.58.029.166.064.544.036.84-.322 3.38-1.713 11.58-2.421 15.365-.3 1.602-.89 2.139-1.46 2.191-1.242.115-2.184-.82-3.386-1.608-1.881-1.233-2.944-2-4.77-3.203-2.11-1.39-.742-2.155.46-3.404.315-.327 5.784-5.3 5.89-5.752.013-.056.025-.267-.1-.378-.125-.11-.31-.073-.442-.043-.19.043-3.194 2.03-9.015 5.959-.853.585-1.625.87-2.318.856-.763-.017-2.23-.432-3.322-.786-1.338-.435-2.402-.665-2.31-1.404.05-.385.579-.779 1.59-1.18Z" fill="inherit"/></svg>          </a>
+        </li>
+              <li class="footer-social-item">
+          <a class="footer-social-link" href="https://habr.com/ru/company/selectel/" target="_blank">
+            <svg width="54" height="53" viewBox="0 0 54 53" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M18 13h2.722c2.038 0 2.736.045 2.78.189.033.111.053 2.28.053 4.832l-.012 4.637.788-.704c1.1-.97 2.025-1.31 3.777-1.374 1.153-.033 1.622.012 2.43.3 1.771.593 3.022 1.81 3.673 3.607.254.704.287 1.44.333 7.145l.052 6.375h-5.568v-5.202c0-5.126-.012-5.19-.357-5.816-.49-.826-1.017-1.205-1.85-1.295-1.419-.156-2.403.325-2.963 1.485-.268.534-.3 1.094-.313 5.594-.02 2.749-.052 5.054-.052 5.113-.013.079-1.25.124-2.755.124H18.01V25.506L18 13Z" fill="inherit"/></svg>          </a>
+        </li>
+      
+      <li class="footer-social-item rss">
+        <a class="footer-social-link" href="https://selectel.ru/blog/feed/" target="_blank" rel="noreferrer noopener">
+          <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.42 37.006a15.393 15.393 0 0 0-4.536-10.958 15.39 15.39 0 0 0-10.958-4.536v3.833a11.59 11.59 0 0 1 8.247 3.414 11.579 11.579 0 0 1 3.414 8.248h3.834Z" fill="#fff"/><path d="M29.662 23.27a19.291 19.291 0 0 1 5.687 13.735h3.833a23.098 23.098 0 0 0-6.81-16.446 23.098 23.098 0 0 0-16.444-6.809l-.001 3.833a19.289 19.289 0 0 1 13.735 5.687Z" fill="#fff"/><circle cx="18.95" cy="33.95" r="3.5" transform="rotate(45 18.95 33.95)" fill="#fff"/></svg>        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://selectel.ru",
+      "name": "Selectel",
+      "logo": "https://static.selectel.ru/logo_selectel_color.jpg",
+      "sameAs": [
+        "https://vk.com/selectel",
+        "https://twitter.com/selectel",
+        "https://habrahabr.ru/company/selectel/",
+        "https://www.youtube.com/channel/UCVU0Ml1l_Y90wmy5EjWTSng"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "contactOption": "http://schema.org/TollFree",
+          "availableLanguage": "Russian, English",
+          "telephone": "+7 (800) 555-06-75"
+        }
+      ],
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Москва",
+          "streetAddress": "ул. Берзарина, д. 36, стр. 3",
+          "telephone": "+7 (495) 647-79-80",
+          "postalCode": "123060",
+          "addressCountry": {
+            "@type": "Country",
+            "name": "Россия"
+          }
+        },
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Санкт-Петербург",
+          "streetAddress": "ул. Цветочная, д. 21, лит. А",
+          "telephone": "+7 (812) 677-80-36",
+          "faxNumber": "+7 (812) 677-80-86",
+          "postalCode": "196084",
+          "addressCountry": {
+            "@type": "Country",
+            "name": "Россия"
+          }
+        }
+      ]
+    }
+  </script>
+  <style id='core-block-supports-inline-css'>
+.wp-container-3.wp-container-3{flex-wrap:nowrap;}
+</style>
+<script src='https://selectel.ru/blog/wp-content/themes/selectel-academy/dist/js/app.js?ver=1.0.2' id='main-js'></script>
+
