@@ -1,3 +1,4 @@
+import json
 from os import listdir, path
 from bs4 import BeautifulSoup
 
@@ -5,6 +6,7 @@ from bs4 import BeautifulSoup
 storage_directory = path.dirname('crawling/result/ru/')
 lemmas_file = 'tokenizer/lemmas.txt'
 inverted_index_file = 'inverted_index/inverted_index.txt'
+inverted_index_json = 'inverted_index/inverted_index.json'
 
 
 def get_texts():
@@ -59,6 +61,8 @@ def build_index():
         for key, files in inverted_index.items():
             index.write(key + ' ' + str(files) + '\n')
 
+    with open(inverted_index_json, 'w', encoding='utf-8') as index:
+        json.dump(inverted_index, index)
 
 if __name__ == "__main__":
     build_index()
